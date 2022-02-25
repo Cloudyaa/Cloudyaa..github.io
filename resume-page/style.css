@@ -40,6 +40,11 @@ h2 {
   text-shadow: 2px 1px 2px #575757;
 }
 
+h3{
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
 p {
   font-size: 1.2rem;
 }
@@ -74,7 +79,7 @@ hr {
 }
 
 /* ---- HEADER ---- */
-#title h1, #title h2, #header-content, #photo, #contact {
+#title h1, #title h2, #title h3, #header-content, #photo, #contact {
   position: relative;
 }
 
@@ -89,7 +94,7 @@ hr {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-top: 9em;
+  margin-top: 7em;
   z-index: 3;
 }
 

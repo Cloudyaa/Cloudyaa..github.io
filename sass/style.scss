@@ -1,0 +1,323 @@
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+@-ms-viewport {
+  width: device-width;
+}
+
+
+/* ---- MAIN TAGS STYLES ---- */
+html {
+	box-sizing: border-box;
+	/* 1rem = 16px = 100% -> 10px = 62.5% */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $main-font;
+	font-size: 1.8rem;
+	/* 18px */
+  font-weight: 300;
+	line-height: 1.4;
+	color: $silver;
+  background: $jungle-green;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	text-shadow: $text-shadow;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 20rem;
+}
+
+h2 {
+	font-size: 7rem;
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: $mustard;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+hr {
+	margin-bottom: 8rem;
+	height: 0px;
+	clear: both;
+  border: 1px solid transparent;
+}
+
+
+/* ---- NAV BAR ---- */
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 5rem;
+	background: $army;
+	box-shadow: $box-shadow;
+	z-index: 10;
+}
+
+.nav-list {
+	display: flex;
+	margin-right: 2rem;
+  a {
+	  display: block;
+	  font-size: 2rem;
+	  margin-right: 2rem;
+	  padding: 0.2em;
+   }
+   a:hover {
+    background: $jungle-green;
+ }
+}
+
+
+/* ---- WELCOME SECTION ---- */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 15rem;
+  width: 100%;
+  background-color: $jungle-green;
+  h1 {
+    transition: transform $transition;
+    transform: translateX(5rem);
+  }
+  h1:hover {
+    transform: translateX(0rem);
+    .code {
+      color: $mustard;
+    }
+  }
+  h3 {
+    margin-bottom: 4rem;
+  }
+  p {
+    font-size: 3rem;
+    color: $mustard;
+  }
+}
+
+#stack-box {
+	display: flex;
+	width: 80%;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	font-size: 10rem;
+  p {
+    color: inherit;
+ }
+}
+
+.stack-img {
+	transition: all 0.5s ease;
+} 
+  
+.stack-img:hover {
+  color: $mustard;
+}
+
+
+/* ---- PROJECTS SECTION ---- */
+.projects-section {
+	text-align: center;
+	padding: 10rem 2rem;
+	background: $jungle-green;
+	background-image: linear-gradient(to bottom, $jungle-green, $army);
+}
+
+.projects-section-header {
+	max-width: 80rem;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.02em solid;
+	border-image: linear-gradient(90deg, $jungle-green, $mustard, $jungle-green) 1;
+}
+
+/* -- projects boxes in grid for automagic fit -- */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 120rem;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.project {
+	background: $jungle-green;
+	box-shadow: $box-shadow;
+}
+
+.code {
+  color: $jungle-green;
+  text-shadow: none;
+}
+
+.project:hover {
+  .code {
+	  color: $flame;
+  }
+}
+
+.project-image {
+	height: calc(100% - 6.8rem);
+	width: 100%;
+	object-fit: cover;
+	@include filter(grayscale(80%));
+}
+
+.project-image:hover {
+  @include filter(grayscale(0%));
+}
+
+.project-title {
+	font-size: 2rem;
+	padding: 2rem 0.5rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 0.1rem;
+}
+
+.btn-show-all {
+	font-size: 2rem;
+	background: $jungle-green;
+  i {
+	  margin-left: 1rem;
+	  transform: translateX(0);
+  }
+}
+
+.project-title:hover, .btn-show-all:hover {
+	background: $army;
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+
+/* ---- CONTACT SECTION ---- */
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 40rem;
+	padding: 0 2rem;
+	background: $jungle-green;
+  h2 {
+	  font-size: 6rem;
+  }
+}
+
+.contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 980px;
+	margin-top: 4rem;
+	flex-wrap: wrap;
+}
+
+.contact-details {
+	font-size: 2.4rem;
+	text-shadow: $text-shadow;
+}
+
+.contact-details:hover {
+	transform: translateY(-0.5rem);
+}
+
+
+/* ---- TRANSITIONS ---- */
+.code, 
+.project-image, 
+.project-title, 
+.btn-show-all, 
+.btn-show-all > i,
+.contact-details {
+  transition: $transition;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 60%;
+	}
+  h1 {
+    font-size: 15rem;
+ }
+}
+
+
+/* ---- MOBILE VIEW ---- */
+@media (max-width: 460px) {
+  html {
+    font-size: 35%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  h1{
+    font-size:10rem;
+  }
+	.nav {
+		justify-content: center; 
+	}
+  .nav-list{
+    margin: 0;
+  }
+	.welcome-section {
+    h1 {
+      transform: translateX(2rem);
+    }
+    h3 {
+       font-size: 6rem;
+    }
+  }  
+    
+  #stack-box {
+		-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	}
+  .projects-section {
+    padding: 10rem 1rem; 
+  }
+}

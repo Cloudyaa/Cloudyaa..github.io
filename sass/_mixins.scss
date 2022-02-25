@@ -1,0 +1,20 @@
+@mixin box-shadow($x, $y, $blur, $color){ 
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    -ms-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+  }
+  
+@mixin filter($color){
+  -webkit-filter: $color;
+  -moz-filter: $color;
+  -ms-filter: $color;
+  filter: $color;
+}
+
+@mixin prefix($property, $value, $prefixes) {
+    @each $prefix in $prefixes {
+      -#{$prefix}-#{$property}: $value;
+    }
+    #{$property}: $value;
+}
