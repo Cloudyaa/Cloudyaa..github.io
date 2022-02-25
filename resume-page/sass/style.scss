@@ -1,0 +1,289 @@
+@import "../../sass/colors";
+@import "../../sass/fonts";
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+@-ms-viewport {
+  width: device-width;
+}
+
+  
+  /* ---- BASE CSS RESET ---- */
+  * {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* box-sizing and font sizing */
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+  }
+  
+  /* ---- MAIN TAGS STYLES ---- */
+  html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	font-family: $resume-font; 
+	line-height: 1.4;
+	color: $black;
+	background-color: $resume-bg;
+	overflow-x: hidden;
+  }
+  
+  h1 {
+	font-weight: 700;
+	font-size: 4rem;
+  }
+  
+  h2 {
+	font-size: 2rem;
+	text-shadow: $text-shadow;
+  }
+  
+  h3{
+	font-size: 1.5rem;
+	margin-top: 1em;
+  }
+  
+  p {
+	font-size: 1.2rem;
+  }
+  
+  a {
+	text-decoration: none;
+	color: $black;
+  }
+  
+  a:visited {
+	color: $black;
+  }
+  
+  ul {
+	list-style: none;
+  }
+  
+  img {
+	width: 100%;
+	height: auto;
+  }
+  
+  hr {
+	@include hr; 
+  }
+  
+  .fa, .fab {
+	font-size: 2em;
+  }
+  
+  /* ---- HEADER ---- */
+  #title h1, #title h2, #title h3, #header-content, #photo, #contact {
+	position: relative;
+  }
+  
+  #title {
+	h1, h2 {
+		text-align: center;
+		margin: 1rem auto;
+		color: $white;
+		z-index: 3;
+	}
+  }
+
+  #header-content {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top: 7em;
+	z-index: 3;
+	.fab:hover, .fa:hover {
+		color: $ferrari-red;
+	}
+  }
+  
+  #location, #github {
+	transition: transform 0.3s ease-out;
+  }
+  
+  #location:hover, #github:hover {
+	transform: scale(1.2);
+  }
+  
+  #location:hover {
+	  .fa, 
+	  #github:hover {
+		  .fab {
+			transform: scale(1.2);
+			color: $ferrari-red;
+		  }
+		}
+  }
+  
+  #photo {
+	max-width: 15em;
+	margin-top: -7em;
+	right: 1em;
+	@include filter(grayscale(20%));
+  }
+  
+  #contact {
+	margin: 1.5em auto;
+	text-align: center;
+	z-index: 3;
+  }
+  
+  #upper-circle, #lower-circle {
+	position: absolute;
+	width: 120%;
+	height: 60em;
+	left: 50%;
+	top: -100%;
+	transform: translateX(-50%);
+	@include border-radius(50%);
+	background-color: $black;
+	z-index: 2;
+  }
+  
+  #lower-circle {
+	top: -65%;
+	z-index: 1;
+	box-shadow: $box-shadow;
+	background-color: $white;
+  }
+  
+  /* ---- CONTENT LEFT SIDE ---- */
+  #body-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 85%;
+	margin: 0 auto;
+	padding: 1em;
+  }
+  
+  #body-content {
+	h2 {
+		font-size: 3em;
+		border-bottom: 0.02em solid;
+		border-image: linear-gradient(90deg, $grey, $resume-bg) 1;
+	}
+	p {
+		padding: 1em;
+	}
+	#left-side {
+		width: 70%;
+  	}
+  	#right-side {
+		width: 35%;
+		padding-left: 2em;
+		border-left: 0.02em solid;
+		border-image: linear-gradient(45deg, $resume-bg, $grey) 1;
+	}
+}
+  
+  time {
+	color: $grey;
+	border-right: 0.02em solid;
+	border-image: linear-gradient(45deg, $resume-bg, $grey) 1;
+  }
+  
+  .content-place {
+	font-weight: 400;
+  }
+  
+  .content-title {
+	display: block;
+	font-size: 130%;
+	font-weight: 600;
+	margin-top: 0.1em;
+  }
+  
+  /* ---- SKILLS ---- */
+  #skills {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(5rem, 10rem));
+	  grid-template-rows: repeat(2, 1fr);
+
+	  h2, .legend {
+		grid-column: 1/4;
+
+	  }
+  }
+
+  .skill-label{
+	font-size: 0.6em;
+	font-family: "M PLUS Code Latin", sans-serif;
+	vertical-align: middle;
+	word-break: keep-all;
+  }
+  
+  .skill-label, .fab, .fa {
+	transition: color 0.2s ease-in;
+
+  }
+  
+  .skill-level {
+	color: $grey;
+  }
+
+  .red, .skill-red:hover{
+	color: $ferrari-red;
+  }
+  
+  .yellow, .skill-yellow:hover{
+	color: $mustard;
+  }
+
+  .green, .skill-green:hover {
+	color: $green;
+  }
+  
+  /* ---- MOBILE VIEW ---- */
+  @media (max-width: 940px) {
+	html {
+	  font-size: 60%;
+	}
+  
+	#upper-circle {
+	  top: -60%;
+	}
+  
+	#lower-circle {
+	  top: -40%;
+	  width: 130%;
+	}
+  }
+  @media (max-width: 460px) {
+	html {
+	  font-size: 50%;
+	}
+  
+	h2 {
+	  text-shadow: $text-shadow;
+	}
+  
+	#upper-circle, #lower-circle {
+	  height: 30em;
+	}
+  
+	#upper-circle {
+	  top: -12%;
+	}
+  
+	#lower-circle {
+	  top: 5%;
+	  width: 130%;
+	}
+  
+	#location, #github {
+	  margin-top: 2em;
+	}
+  
+	#body-content {
+	  width: 90%;
+	}
+  }
