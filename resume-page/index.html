@@ -14,22 +14,26 @@
 
 <!-- ---- HEADER ---- -->
 <header>
-  <div id="title">
+  <div class="title">
     <h1>Klaudia Olczyk</h1>
     <h2>Front-End Developer</h2>
   </div>
-  <div id="header-content">
-    <div id="location">
-      <i class="fa fa-map-marker" aria-hidden="true"></i>
-      <p><a href="https://goo.gl/maps/8MBxY7wq4Zw8MFKU9" target="_blank">Sawston<br>United Kingdom</a></p>
+  <div class="header-content">
+    <div class="location">
+      <p>
+        <i class="fa fa-map-marker" aria-hidden="true"></i><br>
+        <a href="https://goo.gl/maps/8MBxY7wq4Zw8MFKU9" target="_blank">Sawston<br>United Kingdom</a>
+      </p>
     </div>
     <img id="photo" src="https://i.ibb.co/hDFw13P/cv-photo.png" alt="cv-photo"> 
-    <div id="github">
-      <i class="fab fa-github"></i>
-      <p><a href="https://github.com/Cloudyaa"  target="_blank">github.com/<br>Cloudyaa</p></a>
+    <div class="github">
+      <p>
+        <i class="fab fa-github"></i><br>
+        <a href="https://github.com/Cloudyaa"  target="_blank">github.com/<br>Cloudyaa</a>
+      </p>
     </div>
   </div>
-  <div id="contact">
+  <div class="contact">
     <p><a href="mailto:klaudiaaolczyk@gmail.com">klaudiaaolczyk@gmail.com</a></p>
     <p><a href="tel:+447414674357">+44 7414 674 357</a></p>
   </div>
@@ -39,11 +43,11 @@
 
 <hr>
 <!-- ---- CONTENT - LEFT SIDE ---- -->
-<section id="body-content">
-  <section id="left-side">
+<section id="body-content" class="body-content">
+  <section class="left-side">
   
     <!-- ---- EDUCATION ---- -->
-    <div id="education">
+    <div class="education">
       <h2>Education</h2>
         <p>
           <time>03.2021 - 10.2024&nbsp;</time>
@@ -59,7 +63,7 @@
     </div>
     
     <!-- ---- EXPERIENCE ---- -->    
-    <div id="experience">
+    <div class="experience">
       <h2>Work experience</h2>
       <p>
         <time>09.2015&nbsp;</time>
@@ -71,39 +75,48 @@
   </section>
   
 <!-- ---- CONTENT - RIGHT SIDE ---- --> 
-  <section id="right-side">
+  <section class="right-side">
     
     <!-- ---- SKILLS ---- -->  
-    <div id="skills">
+    <div class="skills">
       <h2>Stack</h2>
       <p class="legend">
         <span class="red">Expert </span>
         <span class="yellow">Proficient </span>
         <span class="green">Novice</span>
       </p>
-      <p class="skill-red">
-        <i class="fab fa-html5"><span class="skill-label">&nbsp;HTML5</span>
-        </i>
-      </p>
-      <p class="skill-red">
-         <i class="fab fa-css3-alt"><span class="skill-label">&nbsp;CSS3</span>
-        </i>
-    </p>
-    <p class="skill-yellow">
-      <i class="fab fa-sass"><span class="skill-label">&nbsp;SASS</span>
-      </i>
-    </p>
-      <p class="skill-green">
-        <i class="fab fa-js"><span class="skill-label">&nbsp;JAVASCRIPT
-        </i>
-      </p>
+      <div class="stack-box">
+        <p class="skill-red skill">
+          <i class="fab fa-html5 fa-lg"></i>
+          <span class="skill-label">&nbsp;HTML5</span>
+        </p>
+        <p class="skill-red skill">
+          <i class="fab fa-css3-alt fa-lg"></i>
+          <span class="skill-label">&nbsp;CSS3</span>
+        </p>
+        <p class="skill-yellow skill">
+          <i class="fab fa-sass fa-lg"></i>
+          <span class="skill-label">&nbsp;SASS</span>
+        </p>
+        <p class="skill-green skill">
+          <i class="fab fa-js fa-lg"></i>
+          <span class="skill-label">&nbsp;JAVASCRIPT</span>
+       </p>
 
       <h2>Other skills</h2>
-      <p>
-        <i class="fa-solid fa-language"><span class="skill-label">&nbsp;English
+        <p class="skill">
+          <i class="fas fa-hand-point-right"></i>
+          <span class="skill-label">&nbsp;English
           <span class="skill-level">- C1</span></span>
-        </i>
-      </p>
+        </p>
+        <p class="skill">
+          <i class="fas fa-hand-point-right"></i>
+          <span class="skill-label">&nbsp;Adobe Photoshop
+        </p>
+        <p class="skill">
+          <i class="fas fa-hand-point-right"></i>
+          <span class="skill-label">&nbsp;Microsoft Office
+        </p>
     </div>
   </section>
   

@@ -20,10 +20,10 @@ body {
 	font-family: $main-font;
 	font-size: 1.8rem;
 	/* 18px */
-  font-weight: 300;
+  	font-weight: 300;
 	line-height: 1.4;
-	color: $silver;
-  background: $jungle-green;
+	color: $main-text;
+  	background: $main-background;
 }
 
 h1, h2, h3 {
@@ -50,7 +50,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: $mustard;
+	color: $highlight-text;
 }
 
 img {
@@ -62,9 +62,12 @@ hr {
 	margin-bottom: 8rem;
 	height: 0px;
 	clear: both;
-  border: 1px solid transparent;
+  	border: 1px solid transparent;
 }
 
+.section{
+	height: 100vh;
+}
 
 /* ---- NAV BAR ---- */
 
@@ -76,9 +79,9 @@ hr {
 	top: 0;
 	left: 0;
 	width: 100%;
-  height: 5rem;
-	background: $army;
-	box-shadow: $box-shadow;
+  	height: 5rem;
+	background: $second-background;
+	box-shadow: $small-shadow;
 	z-index: 10;
 }
 
@@ -92,7 +95,7 @@ hr {
 	  padding: 0.2em;
    }
    a:hover {
-    background: $jungle-green;
+    background: $main-background;
  }
 }
 
@@ -104,9 +107,8 @@ hr {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 15rem;
   width: 100%;
-  background-color: $jungle-green;
+  background-color: $main-background;
   h1 {
     transition: transform $transition;
     transform: translateX(5rem);
@@ -114,7 +116,7 @@ hr {
   h1:hover {
     transform: translateX(0rem);
     .code {
-      color: $mustard;
+      color: $highlight-text;
     }
   }
   h3 {
@@ -122,16 +124,24 @@ hr {
   }
   p {
     font-size: 3rem;
-    color: $mustard;
+    color: $highlight-text;
   }
 }
 
-#stack-box {
+
+/* ---- STACK SECTION ---- */
+.stack {
+	width: 100%;
+	background-color: $second-background;
+}
+
+.stack-box {
 	display: flex;
-	width: 80%;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
 	text-align: center;
+	margin: 12rem auto;
+	width: 80%;
 	font-size: 10rem;
   p {
     color: inherit;
@@ -143,7 +153,7 @@ hr {
 } 
   
 .stack-img:hover {
-  color: $mustard;
+  color: $highlight-text;
 }
 
 
@@ -151,15 +161,15 @@ hr {
 .projects-section {
 	text-align: center;
 	padding: 10rem 2rem;
-	background: $jungle-green;
-	background-image: linear-gradient(to bottom, $jungle-green, $army);
+	background: $main-background;
+	background-image: linear-gradient(to bottom, $main-background, $second-background);
 }
 
 .projects-section-header {
 	max-width: 80rem;
 	margin: 0 auto 6rem auto;
 	border-bottom: 0.02em solid;
-	border-image: linear-gradient(90deg, $jungle-green, $mustard, $jungle-green) 1;
+	border-image: linear-gradient(90deg, $main-background, $highlight-text, $main-background) 1;
 }
 
 /* -- projects boxes in grid for automagic fit -- */
@@ -174,12 +184,12 @@ hr {
 }
 
 .project {
-	background: $jungle-green;
-	box-shadow: $box-shadow;
+	background: $main-background;
+	box-shadow: $small-shadow;
 }
 
 .code {
-  color: $jungle-green;
+  color: $main-background;
   text-shadow: none;
 }
 
@@ -213,7 +223,7 @@ hr {
 
 .btn-show-all {
 	font-size: 2rem;
-	background: $jungle-green;
+	background: $main-background;
   i {
 	  margin-left: 1rem;
 	  transform: translateX(0);
@@ -221,7 +231,7 @@ hr {
 }
 
 .project-title:hover, .btn-show-all:hover {
-	background: $army;
+	background: $second-background;
 }
 
 .btn-show-all:hover > i {
@@ -236,9 +246,8 @@ hr {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 40rem;
 	padding: 0 2rem;
-	background: $jungle-green;
+	background: $main-background;
   h2 {
 	  font-size: 6rem;
   }
@@ -312,7 +321,7 @@ hr {
     }
   }  
     
-  #stack-box {
+  .stack-box {
 		-ms-flex-wrap: wrap;
     flex-wrap: wrap;
 	}

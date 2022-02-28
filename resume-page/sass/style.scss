@@ -30,7 +30,7 @@
   body {
 	font-family: $resume-font; 
 	line-height: 1.4;
-	color: $black;
+	color: $resume-text;
 	background-color: $resume-bg;
 	overflow-x: hidden;
   }
@@ -81,46 +81,33 @@
   }
   
   /* ---- HEADER ---- */
-  #title h1, #title h2, #title h3, #header-content, #photo, #contact {
+  .title h1, .title h2, .title h3, .header-content, #photo, .contact {
 	position: relative;
   }
   
-  #title {
+  .title {
 	h1, h2 {
 		text-align: center;
 		margin: 1rem auto;
-		color: $white;
+		color: $resume-header;
 		z-index: 3;
 	}
   }
 
-  #header-content {
+  .header-content {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
 	margin-top: 7em;
 	z-index: 3;
-	.fab:hover, .fa:hover {
-		color: $ferrari-red;
+  }
+  
+  .location, .github {
+	transition: transform $transition;
+	&:hover {
+		color: $resume-hover;
+		transform: scale(1.2);
 	}
-  }
-  
-  #location, #github {
-	transition: transform 0.3s ease-out;
-  }
-  
-  #location:hover, #github:hover {
-	transform: scale(1.2);
-  }
-  
-  #location:hover {
-	  .fa, 
-	  #github:hover {
-		  .fab {
-			transform: scale(1.2);
-			color: $ferrari-red;
-		  }
-		}
   }
   
   #photo {
@@ -130,7 +117,7 @@
 	@include filter(grayscale(20%));
   }
   
-  #contact {
+  .contact {
 	margin: 1.5em auto;
 	text-align: center;
 	z-index: 3;
@@ -144,28 +131,26 @@
 	top: -100%;
 	transform: translateX(-50%);
 	@include border-radius(50%);
-	background-color: $black;
+	background-color: $circle-color;
 	z-index: 2;
   }
   
   #lower-circle {
 	top: -65%;
 	z-index: 1;
-	box-shadow: $box-shadow;
-	background-color: $white;
+	box-shadow: $big-shadow;
+	background-color: $lower-circle-color;
   }
   
-  /* ---- CONTENT LEFT SIDE ---- */
+  /* ---- CONTENT  ---- */
   #body-content {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 1em;
-  }
-  
-  #body-content {
+ 
 	h2 {
 		font-size: 3em;
 		border-bottom: 0.02em solid;
@@ -174,10 +159,10 @@
 	p {
 		padding: 1em;
 	}
-	#left-side {
-		width: 70%;
+	.left-side {
+		width: 65%;
   	}
-  	#right-side {
+  	.right-side {
 		width: 35%;
 		padding-left: 2em;
 		border-left: 0.02em solid;
@@ -186,7 +171,7 @@
 }
   
   time {
-	color: $grey;
+	color: $resume-subtext;
 	border-right: 0.02em solid;
 	border-image: linear-gradient(45deg, $resume-bg, $grey) 1;
   }
@@ -202,35 +187,26 @@
 	margin-top: 0.1em;
   }
   
-  /* ---- SKILLS ---- */
-  #skills {
-	  display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(5rem, 10rem));
-	  grid-template-rows: repeat(2, 1fr);
-
-	  h2, .legend {
-		grid-column: 1/4;
-
-	  }
-  }
-
-  .skill-label{
-	font-size: 0.6em;
-	font-family: "M PLUS Code Latin", sans-serif;
-	vertical-align: middle;
+  /* ---- STACK and SKILLS ---- */
+  .stack-box{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 	word-break: keep-all;
+	.skill{
+		font-size: 1.5rem;
+	}
   }
   
-  .skill-label, .fab, .fa {
-	transition: color 0.2s ease-in;
-
+  .fab, .fa {
+	transition: color $transition;
   }
   
   .skill-level {
-	color: $grey;
+	color: $resume-subtext;
   }
 
-  .red, .skill-red:hover{
+  .red, .skill-red:hover {
 	color: $ferrari-red;
   }
   
@@ -257,6 +233,8 @@
 	  width: 130%;
 	}
   }
+
+
   @media (max-width: 460px) {
 	html {
 	  font-size: 50%;
@@ -279,11 +257,40 @@
 	  width: 130%;
 	}
   
-	#location, #github {
+	.location, .github {
 	  margin-top: 2em;
 	}
   
 	#body-content {
-	  width: 90%;
+	  width: 97%;
+	  .right-side {
+		width: 43%;
+		padding-left: 1em;
+	  }
+	  h2 {
+		font-size: 2.3rem;
+	  }
 	}
+
+	.legend {
+		font-size: 70%;
+	}
+
+	.stack-box{
+		.skill{
+			font-size: 1rem;
+		}
+	  }
+
+	.skill-red i{
+		color: $ferrari-red;
+	  }
+	  
+	.skill-yellow i{
+		color: $mustard;
+	  }
+	
+	.skill-green i{
+		color: $green;
+	  }
   }

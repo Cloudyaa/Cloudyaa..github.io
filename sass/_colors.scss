@@ -1,3 +1,4 @@
+/* colors definition */
 $army: #11251F;
 $jungle-green: #18362E;
 $green: #017206;
@@ -5,8 +6,25 @@ $mustard: #EEB736;
 $flame: #DF5624;
 $ferrari-red: #ff2800;
 $black: #000;
-$shadow: #1F1F1F;
+$charcoal: #1F1F1F;
 $grey: #575757;
 $silver: #B3B3B3;
-$resume-bg:#e3e3e3;
+$lt-grey:#e3e3e3;
 $white: #fff;
+
+
+/* active palette - portfolio */
+$main-background: $jungle-green;
+$second-background: $army;
+$main-text: $silver;
+$highlight-text: $mustard;
+$shadow: $charcoal;
+
+/* active palette - resume */
+$resume-bg: $lt-grey;
+$resume-header: $white;
+$resume-text: $black;
+$resume-subtext: $grey;
+$resume-hover: $ferrari-red;
+$circle-color: $black;
+$lower-circle-color: $white;

@@ -1,3 +1,6 @@
+/* colors definition */
+/* active palette - portfolio */
+/* active palette - resume */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;400;600&display=swap");
 @-ms-viewport {
@@ -32,7 +35,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  text-shadow: 2px 2px 1px #1F1F1F; }
+  text-shadow: 1px 1px 2px #1F1F1F; }
 
 h3 {
   font-size: 1.5rem;
@@ -65,34 +68,27 @@ hr {
   font-size: 2em; }
 
 /* ---- HEADER ---- */
-#title h1, #title h2, #title h3, #header-content, #photo, #contact {
+.title h1, .title h2, .title h3, .header-content, #photo, .contact {
   position: relative; }
 
-#title h1, #title h2 {
+.title h1, .title h2 {
   text-align: center;
   margin: 1rem auto;
   color: #fff;
   z-index: 3; }
 
-#header-content {
+.header-content {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-top: 7em;
   z-index: 3; }
-  #header-content .fab:hover, #header-content .fa:hover {
-    color: #ff2800; }
 
-#location, #github {
+.location, .github {
   transition: transform 0.3s ease-out; }
-
-#location:hover, #github:hover {
-  transform: scale(1.2); }
-
-#location:hover .fa .fab,
-#location:hover #github:hover .fab {
-  transform: scale(1.2);
-  color: #ff2800; }
+  .location:hover, .github:hover {
+    color: #ff2800;
+    transform: scale(1.2); }
 
 #photo {
   max-width: 15em;
@@ -103,7 +99,7 @@ hr {
   -ms-filter: grayscale(20%);
   filter: grayscale(20%); }
 
-#contact {
+.contact {
   margin: 1.5em auto;
   text-align: center;
   z-index: 3; }
@@ -125,34 +121,30 @@ hr {
 #lower-circle {
   top: -65%;
   z-index: 1;
-  box-shadow: 0 0 16px #1F1F1F;
+  box-shadow: 0 0 150px #1F1F1F;
   background-color: #fff; }
 
-/* ---- CONTENT LEFT SIDE ---- */
+/* ---- CONTENT  ---- */
 #body-content {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   padding: 1em; }
-
-#body-content h2 {
-  font-size: 3em;
-  border-bottom: 0.02em solid;
-  border-image: linear-gradient(90deg, #575757, #e3e3e3) 1; }
-
-#body-content p {
-  padding: 1em; }
-
-#body-content #left-side {
-  width: 70%; }
-
-#body-content #right-side {
-  width: 35%;
-  padding-left: 2em;
-  border-left: 0.02em solid;
-  border-image: linear-gradient(45deg, #e3e3e3, #575757) 1; }
+  #body-content h2 {
+    font-size: 3em;
+    border-bottom: 0.02em solid;
+    border-image: linear-gradient(90deg, #575757, #e3e3e3) 1; }
+  #body-content p {
+    padding: 1em; }
+  #body-content .left-side {
+    width: 65%; }
+  #body-content .right-side {
+    width: 35%;
+    padding-left: 2em;
+    border-left: 0.02em solid;
+    border-image: linear-gradient(45deg, #e3e3e3, #575757) 1; }
 
 time {
   color: #575757;
@@ -168,22 +160,17 @@ time {
   font-weight: 600;
   margin-top: 0.1em; }
 
-/* ---- SKILLS ---- */
-#skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 10rem));
-  grid-template-rows: repeat(2, 1fr); }
-  #skills h2, #skills .legend {
-    grid-column: 1/4; }
-
-.skill-label {
-  font-size: 0.6em;
-  font-family: "M PLUS Code Latin", sans-serif;
-  vertical-align: middle;
+/* ---- STACK and SKILLS ---- */
+.stack-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   word-break: keep-all; }
+  .stack-box .skill {
+    font-size: 1.5rem; }
 
-.skill-label, .fab, .fa {
-  transition: color 0.2s ease-in; }
+.fab, .fa {
+  transition: color 0.3s ease-out; }
 
 .skill-level {
   color: #575757; }
@@ -211,7 +198,7 @@ time {
   html {
     font-size: 50%; }
   h2 {
-    text-shadow: 2px 2px 1px #1F1F1F; }
+    text-shadow: 1px 1px 2px #1F1F1F; }
   #upper-circle, #lower-circle {
     height: 30em; }
   #upper-circle {
@@ -219,7 +206,22 @@ time {
   #lower-circle {
     top: 5%;
     width: 130%; }
-  #location, #github {
+  .location, .github {
     margin-top: 2em; }
   #body-content {
-    width: 90%; } }
+    width: 97%; }
+    #body-content .right-side {
+      width: 43%;
+      padding-left: 1em; }
+    #body-content h2 {
+      font-size: 2.3rem; }
+  .legend {
+    font-size: 70%; }
+  .stack-box .skill {
+    font-size: 1rem; }
+  .skill-red i {
+    color: #ff2800; }
+  .skill-yellow i {
+    color: #EEB736; }
+  .skill-green i {
+    color: #017206; } }
