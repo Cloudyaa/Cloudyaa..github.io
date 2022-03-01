@@ -16,7 +16,7 @@
   .nav {
     justify-content: center; }
   .nav-list {
-    margin: 0; }
+    margin-right: -2rem; }
   .welcome-section h1 {
     transform: translateX(2rem); }
   .welcome-section h3 {

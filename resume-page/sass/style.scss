@@ -63,10 +63,6 @@
 	color: $resume-text;
   }
 
-  a:hover {
-	color: $resume-hover;
-  } 
-  
   ul {
 	list-style: none;
   }
@@ -200,6 +196,9 @@
 	.skill{
 		font-size: 1.5rem;
 	}
+	a:hover {
+		color: $resume-hover;
+	  } 
   }
   
   .fab, .fa {

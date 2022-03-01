@@ -51,9 +51,6 @@ a {
 a:visited {
   color: #000; }
 
-a:hover {
-  color: #ff2800; }
-
 ul {
   list-style: none; }
 
@@ -171,6 +168,8 @@ time {
   word-break: keep-all; }
   .stack-box .skill {
     font-size: 1.5rem; }
+  .stack-box a:hover {
+    color: #ff2800; }
 
 .fab, .fa {
   transition: color 0.3s ease-out; }
