@@ -1,0 +1,49 @@
+/* colors definition */
+/* active palette - portfolio */
+/* active palette - resume */
+/* ---- TABLET VIEW ---- */
+@media (max-width: 940px) {
+  html {
+    font-size: 60%; }
+  #upper-circle {
+    top: -60%; }
+  #lower-circle {
+    top: -40%;
+    width: 130%; } }
+
+/* ---- MOBILE VIEW ---- */
+@media (max-width: 460px) {
+  html {
+    font-size: 50%;
+    overflow-x: hidden; }
+  body {
+    position: relative;
+    overflow-x: hidden; }
+  h2 {
+    text-shadow: 1px 1px 2px #1F1F1F; }
+  #upper-circle, #lower-circle {
+    height: 30em; }
+  #upper-circle {
+    top: -12%; }
+  #lower-circle {
+    top: 5%;
+    width: 130%; }
+  .location, .github {
+    margin-top: 2em; }
+  #body-content {
+    width: 97%; }
+    #body-content .right-side {
+      width: 43%;
+      padding-left: 1em; }
+    #body-content h2 {
+      font-size: 2.3rem; }
+  .legend {
+    font-size: 70%; }
+  .stack-box .skill {
+    font-size: 1rem; }
+  .skill-red i {
+    color: #ff2800; }
+  .skill-yellow i {
+    color: #EEB736; }
+  .skill-green i {
+    color: #017206; } }
