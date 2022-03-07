@@ -69,36 +69,71 @@ hr {
 	height: 100vh;
 }
 
-/* ---- NAV BAR ---- */
 
-.nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+/* ---- NAV BAR ---- */
+nav {
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 100%;
-  	height: 5rem;
+ 	left: 0;
+ 	width: 100%;
+	z-index: 100;
 	background: $second-background;
 	box-shadow: $small-shadow;
-	z-index: 10;
-}
+  }
 
-.nav-list {
+ul {
 	display: flex;
-	margin-right: 2rem;
-  a {
-	  display: block;
-	  font-size: 2rem;
-	  margin-right: 2rem;
-	  padding: 0.2em;
-   }
-   a:hover {
-    background: $main-background;
- }
+	align-items: center;
+    justify-content: flex-end;
 }
 
+li a {
+	display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.6rem 1.5rem;
+}
+
+li a::after {
+    content: "";
+	display: block;
+    width: 0;
+    height: 0.1rem;
+    margin: auto;  /*   this makes underline stretch from the middle towards the sides   */
+    transition: $transition;
+	background: $highlight-text;
+}
+
+li a:hover::after {
+    width: 100%;	/* showing underline */
+}
+
+  i.fa {
+	display: block;
+	font-size: 1.5em;
+	color: $mustard;
+	margin: 20px;
+	cursor: pointer;
+	transition: 0.2s;
+  }
+  i.menu, i.close-menu {
+	display: none;
+	cursor: pointer;
+	transition: 0.2s;
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  i.close-menu {
+	left: 0;
+  }
+  i.menu:hover, i.close-menu:hover {
+	color: #ff9e44;
+  }
+  i.fa:hover {
+	color: #ff9e44;
+  }
 
 /* ---- WELCOME SECTION ---- */
 .welcome-section {

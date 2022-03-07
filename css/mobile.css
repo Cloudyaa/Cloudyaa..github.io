@@ -13,9 +13,8 @@
     overflow-x: hidden; }
   h1 {
     font-size: 10rem; }
-  .nav {
-    justify-content: center; }
-  .nav-list {
+  ul {
+    justify-content: center;
     margin-right: -2rem; }
   .welcome-section h1 {
     transform: translateX(2rem); }
