@@ -60,6 +60,15 @@
         display:block;
     }
 
+    .nav .close-menu {
+        position: absolute;
+        right:10rem;
+    }
+
+   .close-menu:hover .nav-list{
+        display:none;
+    } 
+
     li {
         a {
             margin-top: 5rem;

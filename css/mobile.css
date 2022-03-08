@@ -41,6 +41,11 @@
       border-radius: 1rem; }
   .mobile-menu:hover .nav-list {
     display: block; }
+  .nav .close-menu {
+    position: absolute;
+    right: 10rem; }
+  .close-menu:hover .nav-list {
+    display: none; }
   li a {
     margin-top: 5rem;
     font-size: 3rem; }
