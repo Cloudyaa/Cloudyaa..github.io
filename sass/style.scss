@@ -78,7 +78,7 @@ nav {
  	width: 100%;
 	z-index: 100;
 	background: $second-background;
-	box-shadow: $small-shadow;
+	@include box-shadow($small-shadow);
   }
 
 ul {
@@ -109,13 +109,23 @@ li a:hover::after {
     width: 100%;	/* showing underline */
 }
 
+i.fa {
+	display: block;
+	font-size: 2em;
+	color: $highlight-text;
+	margin: 1.2rem;
+}
+
+i.menu {
+	display: none;
+  }
+
 /* ---- WELCOME SECTION ---- */
 .welcome-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 100%;
   background-color: $main-background;
   h1 {
@@ -194,7 +204,7 @@ li a:hover::after {
 
 .project {
 	background: $main-background;
-	box-shadow: $small-shadow;
+	@include box-shadow($small-shadow);
 }
 
 .code {
@@ -216,7 +226,7 @@ li a:hover::after {
 }
 
 .project-image:hover {
-  @include filter(grayscale(0%));
+	@include filter(grayscale(0%));
 }
 
 .project-title {
@@ -227,7 +237,7 @@ li a:hover::after {
 .btn {
 	display: inline-block;
 	padding: 1rem 2rem;
-	border-radius: 0.1rem;
+	@include border-radius(0.1rem);
 }
 
 .btn-show-all {
