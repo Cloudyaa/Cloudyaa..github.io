@@ -92,31 +92,6 @@ li a:hover::after {
   width: 100%;
   /* showing underline */ }
 
-i.fa {
-  display: block;
-  font-size: 1.5em;
-  color: #EEB736;
-  margin: 20px;
-  cursor: pointer;
-  transition: 0.2s; }
-
-i.menu, i.close-menu {
-  display: none;
-  cursor: pointer;
-  transition: 0.2s;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-i.close-menu {
-  left: 0; }
-
-i.menu:hover, i.close-menu:hover {
-  color: #ff9e44; }
-
-i.fa:hover {
-  color: #ff9e44; }
-
 /* ---- WELCOME SECTION ---- */
 .welcome-section {
   display: flex;
