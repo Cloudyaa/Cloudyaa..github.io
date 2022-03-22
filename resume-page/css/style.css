@@ -85,7 +85,7 @@ hr {
   z-index: 3; }
 
 .location, .github {
-  transition: transform 0.3s ease-out; }
+  transition: transform 0.2s ease-out; }
   .location:hover, .github:hover {
     color: #ff2800;
     transform: scale(1.2); }
@@ -172,7 +172,7 @@ time {
     color: #ff2800; }
 
 .fab, .fa {
-  transition: color 0.3s ease-out; }
+  transition: color 0.2s ease-out; }
 
 .skill-level {
   color: #575757; }
@@ -185,3 +185,6 @@ time {
 
 .green, .skill-green:hover {
   color: #017206; }
+
+.skill-img {
+  height: 30px; }
