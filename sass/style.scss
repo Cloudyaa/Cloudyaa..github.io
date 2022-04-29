@@ -178,6 +178,7 @@ i.menu {
 
 /* ---- PROJECTS SECTION ---- */
 .projects-section {
+	height: 100%;
 	text-align: center;
 	padding: 10rem 2rem;
 	background: $main-background;
@@ -194,7 +195,8 @@ i.menu {
 /* -- projects boxes in grid for automagic fit -- */
 .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	justify-content: center;
 	grid-gap: 4rem;
 	width: 100%;
 	max-width: 120rem;
@@ -232,6 +234,10 @@ i.menu {
 .project-title {
 	font-size: 2rem;
 	padding: 2rem 0.5rem;
+}
+
+#mood-counter{
+	grid-column: 2/3;
 }
 
 .btn {
