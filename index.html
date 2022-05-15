@@ -14,12 +14,9 @@
 <body>
 
 <!-- -- NAV BAR ---->
-
+<button class="toggle"><i class="fa fa-bars menu toggle"></i></button>
 <nav id="navbar" class="nav">
-  <i class="fa fa-close close-menu menu"></i>
-  <ul class="mobile-menu">
-    <i class="fa fa-bars menu"></i>
-  <ul class="nav-list">
+  <ul class="nav-list hidden">
     <li>
       <a href="#welcome-section">About</a>
     </li>
@@ -35,8 +32,6 @@
     <li>
       <a href="resume-page/index.html" target="_blank">My resume</a>
     </li>
-  </ul>
-
   </ul>
 </nav>
 
@@ -56,23 +51,23 @@
   <hr>
   <h3>My stack:</h3>
   <div class="stack-box">
-      <div class="stack-img">
-        <i class="fab fa-html5"></i>
-        <p>HTML</p>
-      </div>
-      <div class="stack-img">
-        <i class="fab fa-css3-alt"></i>
-        <p>CSS</p>
-      </div>
-      <div class="stack-img">
-        <i class="fab fa-sass"></i>
-        <p>Sass</p>
-      </div>
-      <div class="stack-img">
-        <i class="fab fa-js"></i>
-        <p>JavaScript</p>
-      </div>
+    <div class="stack-img">
+      <i class="fab fa-html5"></i>
+      <p>HTML</p>
     </div>
+    <div class="stack-img">
+      <i class="fab fa-css3-alt"></i>
+      <p>CSS</p>
+    </div>
+    <div class="stack-img">
+      <i class="fab fa-sass"></i>
+      <p>Sass</p>
+    </div>
+    <div class="stack-img">
+      <i class="fab fa-js"></i>
+      <p>JavaScript</p>
+    </div>
+  </div>
 </section>
 
 
@@ -135,33 +130,50 @@
       </p>
     </a>
 
-     <!-- ---- Mood counter ---- -->
-     <a
-     href="https://codepen.io/cloud-yaa/full/NWyKowO"
-     target="_blank"
-     class="project project-tile"
-     id="mood-counter"
-   >
-     <img
+    <!-- ---- Mood counter ---- -->
+    <a
+      href="https://codepen.io/cloud-yaa/full/NWyKowO"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
        class="project-image"
        src="img/mood-counter-view.jpg"
        alt="mood counter project"
      />
-     <p class="project-title">
-       <span class="code">&lt;</span>
-       Mood counter
-       <span class="code">&#47;&gt;</span>
-     </p>
-   </a>
-     
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Mood counter
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+
+    <!-- ---- Simply shop ---- -->
+    <a
+      href="https://simplyshopproject.cloudyaa5.repl.co/"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="img/simply-shop-project.jpg"
+        alt="simply shop project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Mood counter
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+
   </div>
 
   <a
     href="https://codepen.io/cloud-yaa"
     class="btn btn-show-all"
     target="_blank"
-    >Show all<i class="fas fa-chevron-right"></i
-  ></a>
+  >Show all<i class="fas fa-chevron-right"></i
+    ></a>
 </section>
 
 
@@ -176,38 +188,39 @@
       href="https://www.facebook.com/klaudiaaolczyk/"
       target="_blank"
       class="btn contact-details">
-        <i class="fab fa-facebook-square"></i> Facebook
+      <i class="fab fa-facebook-square"></i> Facebook
     </a>
     <a
       href="https://www.instagram.com/cloud_yaa/"
       target="_blank"
       class="btn contact-details">
-        <i class="fab fa-instagram"></i> Instagram
+      <i class="fab fa-instagram"></i> Instagram
     </a>
     <a
       id="profile-link"
       href="https://github.com/Cloudyaa"
       target="_blank"
       class="btn contact-details">
-        <i class="fab fa-github"></i> GitHub
+      <i class="fab fa-github"></i> GitHub
     </a>
     <a
       href="https://codepen.io/cloud-yaa"
       target="_blank"
       class="btn contact-details">
-        <i class="fab fa-codepen"></i> Codepen
-      </a>
-    <a href="https://www.linkedin.com/in/klaudiaa-olczyk/" 
+      <i class="fab fa-codepen"></i> Codepen
+    </a>
+    <a href="https://www.linkedin.com/in/klaudiaa-olczyk/"
        target="_blank"
        class="btn contact-details">
-        <i class="fab fa-linkedin"></i> LinkedIn
+      <i class="fab fa-linkedin"></i> LinkedIn
     </a>
-    <a href="mailto:klaudiaaolczyk@gmail.com" 
+    <a href="mailto:klaudiaaolczyk@gmail.com"
        class="btn contact-details">
-        <i class="fas fa-at"></i> Send a mail
+      <i class="fas fa-at"></i> Send a mail
     </a>
   </div>
 </section>
 
+<script src="index.js"></script>
 </body>
 </html>

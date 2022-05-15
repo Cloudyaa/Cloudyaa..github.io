@@ -3,11 +3,6 @@
 @import "mixins";
 @import "variables";
 
-@-ms-viewport {
-  width: device-width;
-}
-
-
 /* ---- MAIN TAGS STYLES ---- */
 html {
 	box-sizing: border-box;
@@ -60,7 +55,7 @@ img {
 
 hr {
 	margin-bottom: 8rem;
-	height: 0px;
+	height: 0;
 	clear: both;
   	border: 1px solid transparent;
 }
@@ -68,7 +63,6 @@ hr {
 .section{
 	height: 100vh;
 }
-
 
 /* ---- NAV BAR ---- */
 nav {
@@ -80,6 +74,10 @@ nav {
 	background: $second-background;
 	@include box-shadow($small-shadow);
   }
+
+.toggle{
+	display:none;
+}
 
 ul {
 	display: flex;
@@ -116,9 +114,6 @@ i.fa {
 	margin: 1.2rem;
 }
 
-i.menu {
-	display: none;
-  }
 
 /* ---- WELCOME SECTION ---- */
 .welcome-section {
@@ -181,8 +176,7 @@ i.menu {
 	height: 100%;
 	text-align: center;
 	padding: 10rem 2rem;
-	background: $main-background;
-	background-image: linear-gradient(to bottom, $main-background, $second-background);
+	background: linear-gradient(to bottom, $main-background, $second-background);
 }
 
 .projects-section-header {
@@ -200,8 +194,7 @@ i.menu {
 	grid-gap: 4rem;
 	width: 100%;
 	max-width: 120rem;
-	margin: 0 auto;
-	margin-bottom: 6rem;
+	margin: 0 auto 6rem;
 }
 
 .project {
@@ -236,7 +229,7 @@ i.menu {
 	padding: 2rem 0.5rem;
 }
 
-#mood-counter{
+#single-project{
 	grid-column: 2/3;
 }
 
@@ -306,3 +299,4 @@ i.menu {
 .contact-details {
   transition: $transition;
 }
+

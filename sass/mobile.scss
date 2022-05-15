@@ -31,47 +31,36 @@
         font-size:10rem;
     }
 
-    i.menu {
-        display: block;
-    }
-
     nav {
         padding-right: 2rem;
-        background: none;
         box-shadow: none;
+        background: none;
     }
 
-    ul{ 
+    .toggle{
+        position: relative;
+        display:block;
+        float: right;
+        background: none;
+        border: none;
+        z-index: 1000;
+    }
+
+    ul{
+        margin-top: 6rem;
         flex-direction: column;
         align-items: flex-end;
         text-align: center;
-        ul{
-            display: none;
-            justify-content: center;
-            width:15rem;
-            height:100vh;
-            line-height: 15rem;
-            background-color: $second-background;
-            @include border-radius(1rem);
-        }
+        background-color: $main-background;
+        border-radius: 5px;
+        float:right;
+        width:30%;
     }
-
-    .mobile-menu:hover .nav-list{
-        display:block;
-    }
-
-    .nav .close-menu {
-        position: absolute;
-        right:10rem;
-    }
-
-   .close-menu:hover .nav-list{
-        display:none;
-    } 
 
     li {
         a {
             margin-top: 5rem;
+            margin-botton: 2 rem;
             font-size: 3rem;
         }
     }
@@ -95,7 +84,8 @@
         height: auto;
     }
 
-    #mood-counter{
-        grid-column: 1/2;
+    .hidden {
+        display: none;
     }
 }
+
