@@ -23,25 +23,29 @@
     box-shadow: none;
     background: none; }
   .toggle {
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
     display: block;
-    float: right;
     background: none;
     border: none;
     z-index: 1000; }
   ul {
-    margin-top: 6rem;
+    margin: 7rem auto;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     background-color: #18362E;
     border-radius: 5px;
-    float: right;
-    width: 30%; }
-  li a {
-    margin-top: 5rem;
-    margin-botton: 2 rem;
-    font-size: 3rem; }
+    width: 90%;
+    opacity: 95%;
+    height: 90vh; }
+  li {
+    position: relative;
+    top: -100px; }
+    li a {
+      margin-bottom: 7rem;
+      font-size: 4rem; }
   .welcome-section h1 {
     transform: translateX(2rem); }
   .welcome-section h3 {

@@ -38,30 +38,33 @@
     }
 
     .toggle{
-        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
         display:block;
-        float: right;
         background: none;
         border: none;
         z-index: 1000;
     }
 
     ul{
-        margin-top: 6rem;
+        margin: 7rem auto;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         text-align: center;
         background-color: $main-background;
         border-radius: 5px;
-        float:right;
-        width:30%;
+        width:90%;
+        opacity: 95%;
+        height: 90vh;
     }
 
     li {
+        position: relative;
+        top: -100px;
         a {
-            margin-top: 5rem;
-            margin-botton: 2 rem;
-            font-size: 3rem;
+            margin-bottom: 7rem;
+            font-size: 4rem;
         }
     }
 
@@ -72,15 +75,15 @@
         h3 {
             font-size: 6rem;
         }
-    }  
-        
+    }
+
     .stack-box {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
     .projects-section {
-        padding: 10rem 1rem; 
+        padding: 10rem 1rem;
         height: auto;
     }
 
