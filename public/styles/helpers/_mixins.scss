@@ -1,0 +1,63 @@
+@use 'colors' as *;
+@mixin box-shadow($shadow){
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+  }
+
+@mixin filter($color){
+  -webkit-filter: $color;
+  -moz-filter: $color;
+  -ms-filter: $color;
+  filter: $color;
+}
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin hr{
+  margin-bottom: 5rem;
+	height: 0px;
+	clear: both;
+	border: 1px solid transparent;
+}
+
+@mixin header-underline {
+  h1::before, h1::after {
+    content: "";
+    position: absolute;
+    background-color: $turquoise;
+    bottom: 0;
+    right: 0;
+    width: 420px;
+    height: 1px;
+  }
+
+  // dot on the end of border line
+  h1::after {
+    bottom: -3px;
+    right: 420px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    h1::before {
+      width: 60vw;
+      max-width: 400px;
+    }
+    h1::after {
+      right: 60vw;
+    }
+  }
+}
+
+
+
+

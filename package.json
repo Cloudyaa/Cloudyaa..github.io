@@ -1,0 +1,37 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test.css specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloudyaa/Cloudyaa.github.io.git"
+  },
+  "author": "Klaudia Olczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cloudyaa/Cloudyaa.github.io/issues"
+  },
+  "homepage": "https://github.com/Cloudyaa/Cloudyaa.github.io#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "bootstrap-icons": "^1.8.3",
+    "normalize.css": "^8.0.1",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "standardx": "^7.0.0"
+  }
+}

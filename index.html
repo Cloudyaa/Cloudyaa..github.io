@@ -1,201 +1,435 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Klaudia Olczyk - Personal portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/eeefc8b21f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mobile.css">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Klaudia Olczyk - Personal portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="shortcut icon" href="public/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 
 <body>
 
-<!-- -- NAV BAR ---->
-<button class="toggle"><i class="fa fa-bars menu toggle"></i></button>
-<nav id="navbar" class="nav">
-  <ul class="nav-list hidden">
-    <li>
-      <a href="#welcome-section">About</a>
-    </li>
-    <li>
-      <a href="#stack-section">My stack</a>
-    </li>
-    <li>
-      <a href="#projects">Work</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-    <li>
-      <a href="resume-page/index.html" target="_blank">My resume</a>
-    </li>
-  </ul>
-</nav>
+<div class="container-fluid row justify-content-center justify-content-xl-end text-end text-wrap">
+
+    <!-- Navigation -->
+    <nav class="nav hidden flex-column justify-content-center align-content-center align-content-xl-start gap-4 text-center position-fixed">
+        <div class="bg-cover"></div>
+        <div class="nav-item d-flex align-items-center active">
+            <a class="nav-link" href="#home">
+                <i class="bi bi-house" role="img" aria-label="home-icon"></i>
+            </a>
+            <div class="hover-item">
+                <p>Home</p>
+            </div>
+        </div>
+        <div class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="#about-section">
+                <i class="bi bi-person" role="img" aria-label="about-me-icon"></i>
+            </a>
+            <div class="hover-item">
+                <p>About me</p>
+            </div>
+        </div>
+        <div class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="#stack-section">
+                <i class="bi bi-code-slash" role="img" aria-label="stack-icon"></i>
+            </a>
+            <div class="hover-item">
+                <p>Stack</p>
+            </div>
+        </div>
+        <div class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="#projects-section">
+                <i class="bi bi-window-fullscreen" role="img" aria-label="projects-icon"></i>
+            </a>
+            <div class="hover-item">
+                <p>Projects</p>
+            </div>
+        </div>
+        <div class="nav-item d-flex align-items-center">
+            <a class="nav-link" href="#contact-section">
+                <i class="bi bi-chat-square-dots" role="img" aria-label="contact-icon"></i>
+            </a>
+            <div class="hover-item">
+                <p>Contact</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <header id="home">
+        <div class="welcome row vw-100 vh-100 justify-content-center justify-content-xl-end align-items-start align-items-xl-center text-center text-xl-end gap-xl-5">
+            <div class="welcome-text w-auto col-6 mt-n5 order-1 order-xl-0">
+                <h3 class="d-block">Hey! I'm</h3>
+                <h1 class="name"></h1>
+                <p class="m-3 p-5">Web developer and designer</p>
+            </div>
+            <div class="col-6 hex d-flex justify-content-center align-items-center">
+                <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+            </div>
+            <a class="order-2" href="https://cloudyaa.github.io/resume-page/index.html"><span
+                    class="resume-btn-border"></span>See my resume</a>
+        </div>
+    </header>
+
+    <!-- About me section -->
+    <section id="about-section">
+        <div class="about content-box">
+            <h1>About me</h1>
+            <div class="content row gap-3 align-items-end justify-content-end align-items-xl-center">
+
+                <div class="text about-text col-xl-11 order-2 order-xl-1">
+                    <p>I am currently a student pursuing an engineering degree in <span class="highlight">Computer Science</span>
+                        at the University of Humanities and Economics in Lodz. Also, I'm a full-time Warehouse worker
+                        right now, seriously ;)</p>
+                    <p>In my spare time, I am studying JavaScipt with <span class="highlight">MegaKurs</span>, or making
+                        happy the graphic side of my soul by spending some time in <span class="highlight">Adobe</span>
+                        programs such as Photoshop, Illustrator, Premiere, or XD. You can see my arts on Instagram, and
+                        process of making them on my TikTok. To see them just click on the icon to the right (or on top
+                        if you are browsing on your mobile).</p>
+                </div>
+
+                <div class="social col-xl-1 order-1 order-xl-2 d-flex flex-xl-column justify-content-xl-center gap-5 vw-100">
+                    <a href="https://www.tiktok.com/@cloudyaa_thecreator" target="_blank"><i
+                            class="bi bi-tiktok"></i></a>
+                    <a href="https://www.instagram.com/cloudyaa_thecreator/" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                </div>
+                <div class="graphic-box order-3">
+                    <h3>My graphic skills</h3>
+                    <div class="d-flex justify-content-end gap-3 gap-xl-4">
+                        <span class="adobe-icon photoshop">Ps</span>
+                        <span class="adobe-icon lightroom">Lr</span>
+                        <span class="adobe-icon illustrator">Il</span>
+                        <span class="adobe-icon xd">Xd</span>
+                        <span class="adobe-icon premiere">Pr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack section -->
+    <section id="stack-section">
+        <div class="stack content-box">
+            <h1>My Stack</h1>
+            <div class="content">
+                <div class="stack-box row row-cols-auto justify-content-center align-items-center gap-5 m-0 w-100">
+                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-html5"></i>
+                        <div>
+                            <p>HTML5</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                </div>
+                                <p class="mt-2">Master</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-css3-alt"></i>
+                        <div>
+                            <p>CSS3</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-sass"></i>
+                        <div>
+                            <p>SASS</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stack-item col-12 col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-bootstrap"></i>
+                        <div>
+                            <p>Bootstrap</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Regular</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stack-item col-12 col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-js"></i>
+                        <div>
+                            <p>JS ES6</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-node"></i>
+                        <div>
+                            <p>Node</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fab fa-node-js"></i>
+                        <div>
+                            <p>Express</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Regular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects-section">
+        <div class="projects content-box">
+            <h1>My projects</h1>
+            <div class="content">
+                <div class="cont cont-inactive">
+                    <div class="cont-inner">
+
+                        <!-- Grocery shop design-->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">Grocery shop</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">Grocery shop</div>
+
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Basket shop -->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">Shop basket</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">Simple shop basket</div>
+                                        <div class="used-tech d-flex gap-3">
+                                            <p class="tech">HTML5</p>
+                                            <p class="tech">CSS3</p>
+                                            <p class="tech">JavaScript</p>
+                                            <p class="tech">Node.js</p>
+                                        </div>
+                                        <p>It was supposed to be simple project done while taking my first steps in
+                                            Node.js thanks to MegaK. Main goal of this project was to get working shop
+                                            basket - add, delete and show items in basket as well as clear whole basket
+                                            at once.</p>
+                                        <p>It was my first back-end project</p>
+                                        <a class="btn" href="https://simply-shop-project.cloudyaa5.repl.co/"
+                                           target="_blank">Live version</a>
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mood counter -->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">Mood counter</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">
+                                            <p>Whatever</p>
 
 
-<!-- ---- WELCOME SECTION ---->
+                                        </div>
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-<section id="welcome-section" class="welcome-section section">
-  <h1><span class="code">&lt;</span>
-    Hey!
-    <span class="code">&#47;&gt;</span></h1>
-  <h2>I'm Klaudia!</h2>
-  <p>IT student looking for her first job as web developer</p>
+                        <!-- HTML/CSS docs page -->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">HTML/CSS Docs&nbsp;page</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">Whatever</div>
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-</section>
+                        <!-- Landing page -->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">Landing page</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">Whatever</div>
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-<section id="stack-section" class="stack section">
-  <hr>
-  <h3>My stack:</h3>
-  <div class="stack-box">
-    <div class="stack-img">
-      <i class="fab fa-html5"></i>
-      <p>HTML</p>
-    </div>
-    <div class="stack-img">
-      <i class="fab fa-css3-alt"></i>
-      <p>CSS</p>
-    </div>
-    <div class="stack-img">
-      <i class="fab fa-sass"></i>
-      <p>Sass</p>
-    </div>
-  </div>
-  <div class="stack-box">
-    <div class="stack-img">
-      <i class="fab fa-js"></i>
-      <p>JavaScript</p>
-    </div>
-    <div class="stack-img">
-      <i class="fab fa-node"></i>
-      <p>Node.js</p>
-    </div>
-  </div>
-</section>
+                        <!-- Survey form-->
+                        <div class="el-box">
+                            <div class="el-overflow">
+                                <div class="el-inner">
+                                    <div class="el-bg"></div>
+                                    <div class="el-preview-cont">
+                                        <h2 class="el-heading">Survey form</h2>
+                                    </div>
+                                    <div class="el-content">
+                                        <div class="el-content-hd">Whatever</div>
+                                        <div class="el-close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<!-- ---- PROJECTS SECTION ---- -->
-
-<section id="projects" class="projects-section section">
-  <h2 class="projects-section-header">These are some of my projects</h2>
-  <div class="projects-grid">
-
-    <!-- ---- Product landing page ---- -->
-    <a
-      href="https://codepen.io/cloud-yaa/full/oNoYNGK"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="img/product-page-view.jpg"
-        alt="product page project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        productLandingPage
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-
-    <!-- ---- Mood counter ---- -->
-    <a
-      href="https://codepen.io/cloud-yaa/full/NWyKowO"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-       class="project-image"
-       src="img/mood-counter-view.jpg"
-       alt="mood counter project"
-     />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        moodCounter.js
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-
-    <!-- ---- Simply shop ---- -->
-    <a
-      href="https://simplyshopproject.cloudyaa5.repl.co/"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="img/simply-shop-project.jpg"
-        alt="simply shop project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        simplyShop.js
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-
-  </div>
-
-  <a href="allprojects.html"
-     class="btn btn-show-all"
-  >
-    Show all<i class="fas fa-chevron-right"></i
-    ></a>
-</section>
+    <!-- Contact section -->
+    <section id="contact-section">
+        <div class="contact content-box">
+            <h1>Contact</h1>
+            <div class="content">
+                <div class="social-group d-flex gap-3 align-items-center justify-content-center">
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-facebook-square social-icon"></i>
+                        </button>
+                        <a href="https://www.facebook.com/klaudiaaolczyk/" target="_blank" class="social-desc">Facebook</a>
+                    </div>
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-instagram social-icon"></i>
+                        </button>
+                        <a href="https://www.instagram.com/cloud_yaa/" target="_blank" class="social-desc">Instagram</a>
+                    </div>
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-github social-icon"></i>
+                        </button>
+                        <a href="https://github.com/Cloudyaa" target="_blank" class="social-desc">Github</a>
+                    </div>
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-codepen social-icon"></i>
+                        </button>
+                        <a href="https://codepen.io/cloud-yaa" target="_blank" class="social-desc">Codepen</a>
+                    </div>
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-chrome social-icon"></i>
+                        </button>
+                        <a href="https://replit.com/@Cloudyaa5" target="_blank" class="social-desc">Replit</a>
+                    </div>
+                    <div class="social-el">
+                        <button type="button" class="btn">
+                            <i class="fab fa-linkedin social-icon"></i>
+                        </button>
+                        <a href="https://www.linkedin.com/in/klaudiaa-olczyk/" target="_blank" class="social-desc">LinkedIn</a>
+                    </div>
+<!--                    <a href="mailto:klaudiaaolczyk@gmail.com" class=" contact-details">-->
+<!--                        <i class="fas fa-at"></i> Send a mail-->
+<!--                    </a>-->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<!-- ---- CONTACT SECTION ---- -->
+</div>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://kit.fontawesome.com/eeefc8b21f.js" crossorigin="anonymous"></script>
+<script src="public/scripts/typeWriter.js"></script>
+<script src="public/scripts/burger.js"></script>
+<script src="public/scripts/projects.js"></script>
 
-<section id="contact" class="contact-section section">
-  <div class="contact-section-header">
-    <h2>Let's work together!</h2>
-  </div>
-  <div class="contact-links">
-    <a
-      href="https://www.facebook.com/klaudiaaolczyk/"
-      target="_blank"
-      class="btn contact-details">
-      <i class="fab fa-facebook-square"></i> Facebook
-    </a>
-    <a
-      href="https://www.instagram.com/cloud_yaa/"
-      target="_blank"
-      class="btn contact-details">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <a
-      id="profile-link"
-      href="https://github.com/Cloudyaa"
-      target="_blank"
-      class="btn contact-details">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a
-      href="https://codepen.io/cloud-yaa"
-      target="_blank"
-      class="btn contact-details">
-      <i class="fab fa-codepen"></i> Codepen
-    </a>
-    <a href="https://replit.com/@Cloudyaa5"
-       target="_blank"
-       class="btn contact-details">
-      <i class="fas fa-bullseye"></i> Replit
-    </a>
-    <a href="https://www.linkedin.com/in/klaudiaa-olczyk/"
-       target="_blank"
-       class="btn contact-details">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="mailto:klaudiaaolczyk@gmail.com"
-       class="btn contact-details">
-      <i class="fas fa-at"></i> Send a mail
-    </a>
-  </div>
-</section>
 
-<script src="index.js"></script>
 </body>
 </html>

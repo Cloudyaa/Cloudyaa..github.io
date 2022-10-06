@@ -1,0 +1,71 @@
+@import '../components/icons';
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @include main-font;
+  color: $main-text;
+  background-color: $main-background;
+}
+
+a {
+  text-decoration: none;
+  color: $second-text;
+}
+
+section {
+  @include header-underline;
+  min-height: 100vh;
+  h1 {
+    position: relative;
+    padding-top: 5%;
+  }
+  .content-box{
+    margin-inline-start: 18%;
+    min-height: inherit;
+    .content {
+      margin-top: 2%;
+      &:first-child { flex-wrap: wrap; }
+    }
+  }
+
+  .highlight {
+    color: $highlight;
+  }
+
+
+
+}
+
+@media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+  html {
+    max-width: 100%;
+    font-size: 60%;
+  }
+
+  body {
+    overflow-x: hidden;
+    letter-spacing: 5px;
+  }
+
+  section {
+    min-height: unset;
+    .content-box {
+      margin-inline-start: 0%;
+      min-height: unset;
+    }
+  }
+
+  .hidden {
+    transform: translateX(-10000px);
+  }
+}
+
+
+
+
+
+

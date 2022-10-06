@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685.5 744.05">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-11 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-3, .cls-6, .cls-7 {
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-6, .cls-7, .cls-8, .cls-10 {
+        stroke: #0dffd3;
+      }
+
+      .cls-1, .cls-8, .cls-9, .cls-13, .cls-10, .cls-12 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-9, .cls-11 {
+        stroke: #333;
+      }
+
+      .cls-2, .cls-4, .cls-6 {
+        stroke-linejoin: bevel;
+      }
+
+      .cls-3, .cls-5, .cls-7, .cls-11 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: .25px;
+      }
+
+      .cls-14 {
+        opacity: .8;
+      }
+
+      .cls-15 {
+        fill: #0dffd3;
+      }
+
+      .cls-13 {
+        fill: #2d2d2d;
+        stroke: #292929;
+      }
+
+      .cls-10 {
+        stroke-width: 25px;
+      }
+
+      .cls-12 {
+        stroke: #2d2d2d;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1" class="cls-14">
+    <g id="home-hex">
+      <g id="lines">
+        <g id="Group_11" data-name="Group 11">
+          <line id="Line_1" data-name="Line 1" class="cls-5" x1="37.9" y1="398.09" x2="23.6" y2="398.09"/>
+          <line id="Line_2" data-name="Line 2" class="cls-4" x1="44.9" y1="408.69" x2="38" y2="398.09"/>
+        </g>
+        <g id="Group_12" data-name="Group 12">
+          <line id="Line_3" data-name="Line 3" class="cls-3" x1="178.4" y1="365.09" x2="63.2" y2="365.09"/>
+          <line id="Line_4" data-name="Line 4" class="cls-3" x1="63.2" y1="365.09" x2="63.2" y2="318.79"/>
+        </g>
+        <g id="Group_13" data-name="Group 13">
+          <line id="Line_5" data-name="Line 5" class="cls-3" x1="155.7" y1="385.69" x2="40.4" y2="385.69"/>
+          <line id="Line_6" data-name="Line 6" class="cls-3" x1="40.4" y1="385.69" x2="40.4" y2="318.79"/>
+        </g>
+        <g id="Group_15" data-name="Group 15">
+          <g id="Group_14" data-name="Group 14">
+            <line id="Line_7" data-name="Line 7" class="cls-7" x1="166.7" y1="375.69" x2="51.4" y2="375.69"/>
+            <line id="Line_8" data-name="Line 8" class="cls-7" x1="51.4" y1="375.69" x2="51.4" y2="305.29"/>
+          </g>
+          <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-15" cx="51.4" cy="304.69" r="2.6"/>
+          <circle id="Ellipse_16" data-name="Ellipse 16" class="cls-15" cx="33" cy="341.99" r="1.9"/>
+          <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-15" cx="68.5" cy="408.69" r="1.3"/>
+          <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-15" cx="1.3" cy="430.39" r="1.3"/>
+        </g>
+        <g id="Group_16" data-name="Group 16">
+          <line id="Line_9" data-name="Line 9" class="cls-7" x1="51.4" y1="359.79" x2="23.6" y2="359.89"/>
+          <line id="Line_10" data-name="Line 10" class="cls-7" x1="23.6" y1="359.89" x2="23.7" y2="430.39"/>
+        </g>
+        <line id="Line_11" data-name="Line 11" class="cls-7" x1="33" y1="342.79" x2="33" y2="359.89"/>
+        <g id="Group_18" data-name="Group 18">
+          <g id="Group_17" data-name="Group 17">
+            <line id="Line_12" data-name="Line 12" class="cls-7" x1="41" y1="394.29" x2="23.9" y2="394.29"/>
+            <line id="Line_13" data-name="Line 13" class="cls-6" x1="50.6" y1="408.59" x2="41.2" y2="394.29"/>
+          </g>
+          <line id="Line_14" data-name="Line 14" class="cls-7" x1="67.7" y1="408.69" x2="50.6" y2="408.69"/>
+        </g>
+        <line id="Line_15" data-name="Line 15" class="cls-1" x1="23.6" y1="430.49" x2="2.1" y2="430.49"/>
+      </g>
+      <g id="Layer_4" data-name="Layer 4">
+        <g id="Group_19" data-name="Group 19">
+          <line id="Line_16" data-name="Line 16" class="cls-5" x1="577.4" y1="217.3" x2="593.2" y2="242.9"/>
+          <line id="Line_17" data-name="Line 17" class="cls-4" x1="588.7" y1="192.9" x2="577.3" y2="217"/>
+        </g>
+        <g id="Group_20" data-name="Group 20">
+          <line id="Line_18" data-name="Line 18" class="cls-11" x1="361.5" y1=".5" x2="489.8" y2="208.4"/>
+          <line id="Line_19" data-name="Line 19" class="cls-11" x1="489.8" y1="208.4" x2="406.2" y2="259.8"/>
+        </g>
+        <g id="Group_21" data-name="Group 21">
+          <line id="Line_20" data-name="Line 20" class="cls-11" x1="424" y1="18.6" x2="552.3" y2="226.6"/>
+          <line id="Line_21" data-name="Line 21" class="cls-11" x1="552.3" y1="226.6" x2="431.6" y2="301"/>
+        </g>
+        <g id="Group_23" data-name="Group 23">
+          <g id="Group_22" data-name="Group 22">
+            <line id="Line_22" data-name="Line 22" class="cls-7" x1="393.6" y1="9.9" x2="521.9" y2="217.8"/>
+            <line id="Line_23" data-name="Line 23" class="cls-7" x1="521.9" y1="217.8" x2="394.9" y2="296.2"/>
+          </g>
+          <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-15" cx="394" cy="296.8" r="5.4"/>
+          <circle id="Ellipse_20" data-name="Ellipse 20" class="cls-15" cx="481.7" cy="288.6" r="4"/>
+          <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-15" cx="562.5" cy="150.4" r="2.7"/>
+          <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-15" cx="676.6" cy="247.3" r="2.7"/>
+        </g>
+        <g id="Group_24" data-name="Group 24">
+          <line id="Line_24" data-name="Line 24" class="cls-7" x1="493.5" y1="235.4" x2="524.4" y2="285.4"/>
+          <line id="Line_25" data-name="Line 25" class="cls-7" x1="524.4" y1="285.4" x2="651.4" y2="207"/>
+        </g>
+        <line id="Line_26" data-name="Line 26" class="cls-7" x1="483.2" y1="287.7" x2="514" y2="268.6"/>
+        <g id="Group_26" data-name="Group 26">
+          <g id="Group_25" data-name="Group 25">
+            <line id="Line_27" data-name="Line 27" class="cls-7" x1="567" y1="215.9" x2="586.1" y2="246.8"/>
+            <line id="Line_28" data-name="Line 28" class="cls-6" x1="582.3" y1="182.7" x2="566.9" y2="215.6"/>
+          </g>
+          <line id="Line_29" data-name="Line 29" class="cls-7" x1="563.3" y1="151.7" x2="582.3" y2="182.6"/>
+        </g>
+        <line id="Line_30" data-name="Line 30" class="cls-1" x1="651.7" y1="206.9" x2="675.7" y2="245.7"/>
+      </g>
+      <g id="Layer_5" data-name="Layer 5">
+        <g id="Group_27" data-name="Group 27">
+          <line id="Line_31" data-name="Line 31" class="cls-11" x1="437.7" y1="517.59" x2="423.4" y2="517.59"/>
+          <line id="Line_32" data-name="Line 32" class="cls-2" x1="444.6" y1="528.19" x2="437.8" y2="517.59"/>
+        </g>
+        <g id="Group_28" data-name="Group 28">
+          <line id="Line_33" data-name="Line 33" class="cls-3" x1="552.8" y1="315.09" x2="437.5" y2="315.09"/>
+          <line id="Line_34" data-name="Line 34" class="cls-3" x1="437.5" y1="315.09" x2="437.5" y2="268.79"/>
+        </g>
+        <line id="Line_35" data-name="Line 35" class="cls-11" x1="342.5" y1="565.89" x2="342.5" y2="498.99"/>
+        <g id="Group_30" data-name="Group 30">
+          <g id="Group_29" data-name="Group 29">
+            <line id="Line_36" data-name="Line 36" class="cls-7" x1="559.5" y1="552.99" x2="386.5" y2="552.99"/>
+            <line id="Line_37" data-name="Line 37" class="cls-7" x1="386.5" y1="552.99" x2="386.5" y2="482.49"/>
+          </g>
+          <circle id="Ellipse_23" data-name="Ellipse 23" class="cls-15" cx="386.5" cy="481.99" r="2.6"/>
+          <circle id="Ellipse_24" data-name="Ellipse 24" class="cls-15" cx="488.7" cy="465.09" r="1.9"/>
+          <circle id="Ellipse_25" data-name="Ellipse 25" class="cls-15" cx="505.7" cy="527.29" r="1.3"/>
+        </g>
+        <g id="Group_31" data-name="Group 31">
+          <line id="Line_38" data-name="Line 38" class="cls-7" x1="488.7" y1="483.99" x2="460.9" y2="483.99"/>
+          <line id="Line_39" data-name="Line 39" class="cls-7" x1="460.9" y1="483.99" x2="460.9" y2="552.99"/>
+        </g>
+        <line id="Line_40" data-name="Line 40" class="cls-7" x1="488.7" y1="466.89" x2="488.7" y2="483.99"/>
+        <g id="Group_33" data-name="Group 33">
+          <g id="Group_32" data-name="Group 32">
+            <line id="Line_41" data-name="Line 41" class="cls-7" x1="478" y1="512.89" x2="460.9" y2="512.89"/>
+            <line id="Line_42" data-name="Line 42" class="cls-6" x1="487.6" y1="527.29" x2="478.2" y2="512.89"/>
+          </g>
+          <line id="Line_43" data-name="Line 43" class="cls-7" x1="504.8" y1="527.29" x2="487.7" y2="527.29"/>
+        </g>
+      </g>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Group_34" data-name="Group 34">
+          <g id="_lt_Radial_Repeat_gt_" data-name=" lt Radial Repeat gt ">
+            <path id="Path_37" data-name="Path 37" class="cls-9" d="M627.7,513.19v-66.3l-57.4-33.2-57.4,33.2v66.3l57.4,33.2,57.4-33.2Z"/>
+            <path id="Path_38" data-name="Path 38" class="cls-9" d="M685,413.49v-66.3l-57.4-33.2-57.4,33.2v66.3l57.4,33.2,57.4-33.2Z"/>
+          </g>
+          <g id="_lt_Radial_Repeat_gt_2" data-name=" lt Radial Repeat gt 2">
+            <path id="Path_39" data-name="Path 39" class="cls-9" d="M427.9,693.09l57.4-33.2v-66.3l-57.4-33.1-57.4,33.2v66.3l57.4,33.1Z"/>
+            <path id="Path_40" data-name="Path 40" class="cls-9" d="M543.1,692.89l57.4-33.2v-66.3l-57.4-33.1-57.4,33.2v66.3l57.4,33.1Z"/>
+          </g>
+          <g id="_lt_Radial_Repeat_gt_3" data-name=" lt Radial Repeat gt 3">
+            <path id="Path_41" data-name="Path 41" class="cls-12" d="M172.3,610.09l57.4,33.2,57.4-33.2v-66.3l-57.4-33.2-57.4,33.2v66.3h0Z"/>
+            <path id="Path_42" data-name="Path 42" class="cls-12" d="M230,709.69l57.4,33.2,57.4-33.2v-66.3l-57.4-33.2-57.4,33.3v66.2Z"/>
+          </g>
+          <g id="_lt_Radial_Repeat_gt_4" data-name=" lt Radial Repeat gt 4">
+            <path id="Path_43" data-name="Path 43" class="cls-13" d="M116.4,347.29v66.3l57.4,33.2,57.4-33.2v-66.3l-57.4-33.2-57.4,33.2Z"/>
+            <path id="Path_44" data-name="Path 44" class="cls-13" d="M59.1,446.99v66.3l57.4,33.2,57.4-33.2v-66.3l-57.4-33.2-57.4,33.2Z"/>
+          </g>
+        </g>
+        <path id="Path_46" data-name="Path 46" class="cls-8" d="M270.7,136.49h-99.9l-50,86.5,50,86.5h99.9l50-86.5-50-86.5Z"/>
+        <path id="Path_84" data-name="Path 84" class="cls-13" d="M198.9,381.69l71.8,124.4h143.6l71.8-124.4-71.8-124.4h-143.6l-71.8,124.4Z"/>
+        <path id="Path_45" data-name="Path 45" class="cls-10" d="M420.5,245.19h-156l-78.1,135.1,78.1,135.1h156l78.1-135.1-78.1-135.1Z"/>
+      </g>
+    </g>
+    <path id="Path_45-2" data-name="Path 45" class="cls-10" d="M264.5,245.21l-78.1,135.1,78.1,135.1h156l78.1-135.1-78.1-135.1h-36.6"/>
+    <path id="Path_45-3" data-name="Path 45" class="cls-10" d="M306.9,245.21h-19.8"/>
+  </g>
+</svg>

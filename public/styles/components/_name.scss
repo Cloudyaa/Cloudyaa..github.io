@@ -1,0 +1,16 @@
+@mixin name {
+  font-family: CountryBlueprint, nameFont, sans-serif;
+  font-size: 12vw;
+  color: $highlight;
+  transform: rotate(-5deg);
+  line-height: 1.4;
+  overflow: hidden;
+  @include font-style;
+}
+
+.name{
+  @include name;
+}
+
+
+

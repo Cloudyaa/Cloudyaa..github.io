@@ -1,0 +1,5 @@
+<svg id="hover_shape" data-name="hover shape" xmlns="http://www.w3.org/2000/svg" width="183" height="40" viewBox="0 0 183 40">
+  <path id="Path_53" data-name="Path 53" d="M163,0H85.079c.025.333.052.667.078,1H163a19,19,0,0,1,0,38H43A19,19,0,0,1,43,1h8.052c-.03-.333-.066-.666-.1-1H43a20,20,0,0,0,0,40H163a20,20,0,0,0,0-40" fill="#0dffd3"/>
+  <line id="Line_47" data-name="Line 47" x2="23" transform="translate(0 20)" fill="none" stroke="#0dffd3" stroke-width="1"/>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="183" height="40" fill="none"/>
+</svg>

@@ -1,0 +1,32 @@
+@import "../components/adobe-icons";
+
+.about {
+  .social {
+    height: 100%;
+    max-width: 60px;
+    width: 25%;
+    .bi {
+      font-size: 300%;
+    }
+  }
+  .graphic-box {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    .content {
+   //   flex-direction: column-reverse;
+    }
+    .social {
+      max-width: 30%;
+    }
+  }
+
+}
+
+
+
+
+
+

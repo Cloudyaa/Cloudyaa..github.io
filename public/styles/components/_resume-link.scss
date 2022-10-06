@@ -1,0 +1,64 @@
+@use "../helpers/colors" as *;
+
+$border: 2px solid $turquoise;
+
+@mixin btn-utils($vertical, $horizontal){
+  #{$vertical}: -10px;
+  #{$horizontal}: -10px;
+  border-#{$vertical}: $border;
+  border-#{$horizontal}: $border;
+}
+
+// see my resume link
+a {
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  width: 280px;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $turquoise;
+  padding-left: 10px;
+}
+
+a::before,
+a::after,
+.resume-btn-border::before,
+.resume-btn-border::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  transition: 1s;
+}
+
+a::before {
+  @include btn-utils(top,left);
+}
+a::after {
+  @include btn-utils(top,right);
+}
+
+.resume-btn-border::before {
+  @include btn-utils(bottom,left);
+}
+.resume-btn-border::after {
+  @include btn-utils(bottom,right);
+}
+
+a:hover {
+  &::before, &::after, & .resume-btn-border::before, & .resume-btn-border::after {
+    width: calc(280px / 1.5);
+    height: calc(50px / 2);
+  }
+}
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    a {
+      left: 50%;
+    }
+  }
+

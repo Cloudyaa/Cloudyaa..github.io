@@ -1,0 +1,40 @@
+@mixin adobe-icon-hover($bg, $border){
+  color: white;
+  background-color: $bg;
+  border-color: $border;
+}
+
+.adobe-icon {
+  width: 50px;
+  height: 50px;
+  color: $highlight;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -2px;
+  border: 3px solid $highlight;
+  border-radius: 10px;
+  background: $charcoal;
+  transition: $transition-all;
+}
+
+.photoshop:hover{
+  @include adobe-icon-hover(#001d26, #00c8ff);
+}
+
+.lightroom:hover{
+  @include adobe-icon-hover(#022326, #3df0f0);
+}
+
+.illustrator:hover{
+  @include adobe-icon-hover(#261300, #ff7c00);
+}
+
+.xd:hover{
+  @include adobe-icon-hover(#2e001f, #ff26be);
+}
+
+.premiere:hover{
+  @include adobe-icon-hover(#210027, #e586ff);
+}
+
