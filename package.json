@@ -1,9 +1,8 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \\\"Error: no test.css specified\\\" && exit 1"
   },
   "repository": {
     "type": "git",

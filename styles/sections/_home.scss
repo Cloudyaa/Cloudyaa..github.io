@@ -1,0 +1,29 @@
+@use '../helpers/fonts' as *;
+
+.welcome {
+  .name{
+    @include name;
+  }
+  .hex {
+    background: url("../../img/home-hex.svg") no-repeat center;
+    max-width: 500px;
+    height: 642.3px;
+  }
+  @import "../components/resume-link";
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    h1 {
+      font-size: 20vw;
+    }
+    .welcome-text {
+      margin-top: -40vh;
+    }
+
+    .hex{
+      width: 100vw;
+      margin-top: -20vh;
+    }
+  }
+}
+
+

@@ -1,0 +1,62 @@
+.stack {
+  .stack-box {
+    min-height: 80vh;
+    color: $grey;
+  }
+  .stack-item {
+    background-color: $charcoal;
+    border-radius: 5px;
+    height: 100px;
+    @include box-shadow(0 0 10px $dk-charcoal);
+    transition: $transition-all;
+  }
+  .skill-description {
+    display: none;
+    margin: 15px auto;
+    transition: $transition-all;
+  }
+
+  div p:first-child {
+    margin: 0;
+    font-size: 2.5rem;
+    transition: $transition-all;
+  }
+  div p:last-child{
+    color: $main-text;
+  }
+
+  .stack-item:hover{
+    scale: 140%;
+    .fab {
+      color: $highlight;
+      @include filter(drop-shadow(0 0 4px $highlight));
+      rotate: -10deg;
+    }
+
+    div p:first-child{
+      color: $main-text;
+      display: none;
+    }
+
+    .skill-description {
+      display: block;
+    }
+  }
+
+  .empty {
+    color: $dk-charcoal;
+  }
+
+}
+
+
+
+@media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+  .stack {
+    .stack-item:hover {
+      scale: 101%;
+    }
+  }
+}
+
+

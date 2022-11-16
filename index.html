@@ -6,8 +6,8 @@
     <title>Klaudia Olczyk - Personal portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/styles/style.css">
-    <link rel="shortcut icon" href="public/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 </head>
@@ -17,9 +17,9 @@
 <div class="container-fluid row justify-content-center justify-content-xl-end text-end text-wrap">
 
     <!-- Navigation -->
-    <nav class="nav hidden flex-column justify-content-center align-content-center align-content-xl-start gap-4 text-center position-fixed">
+    <nav class="nav hidden flex-column justify-content-center align-items-start align-content-xl-start gap-4 text-center position-fixed start-0">
         <div class="bg-cover"></div>
-        <div class="nav-item d-flex align-items-center active">
+        <div class="nav-item">
             <a class="nav-link" href="#home">
                 <i class="bi bi-house" role="img" aria-label="home-icon"></i>
             </a>
@@ -27,7 +27,7 @@
                 <p>Home</p>
             </div>
         </div>
-        <div class="nav-item d-flex align-items-center">
+        <div class="nav-item">
             <a class="nav-link" href="#about-section">
                 <i class="bi bi-person" role="img" aria-label="about-me-icon"></i>
             </a>
@@ -35,7 +35,7 @@
                 <p>About me</p>
             </div>
         </div>
-        <div class="nav-item d-flex align-items-center">
+        <div class="nav-item">
             <a class="nav-link" href="#stack-section">
                 <i class="bi bi-code-slash" role="img" aria-label="stack-icon"></i>
             </a>
@@ -43,7 +43,7 @@
                 <p>Stack</p>
             </div>
         </div>
-        <div class="nav-item d-flex align-items-center">
+        <div class="nav-item">
             <a class="nav-link" href="#projects-section">
                 <i class="bi bi-window-fullscreen" role="img" aria-label="projects-icon"></i>
             </a>
@@ -51,13 +51,13 @@
                 <p>Projects</p>
             </div>
         </div>
-        <div class="nav-item d-flex align-items-center">
+        <div class="nav-item">
             <a class="nav-link" href="#contact-section">
-                <i class="bi bi-chat-square-dots" role="img" aria-label="contact-icon"></i>
-            </a>
+                <i class="bi bi-chat-square-dots" role="img" aria-label="contact-icon"></i></a>
             <div class="hover-item">
                 <p>Contact</p>
             </div>
+
         </div>
     </nav>
 
@@ -65,20 +65,20 @@
     <header id="home">
         <div class="welcome row vw-100 vh-100 justify-content-center justify-content-xl-end align-items-start align-items-xl-center text-center text-xl-end gap-xl-5">
             <div class="welcome-text w-auto col-6 mt-n5 order-1 order-xl-0">
-                <h3 class="d-block">Hey! I'm</h3>
-                <h1 class="name"></h1>
-                <p class="m-3 p-5">Web developer and designer</p>
+                <h4 class="d-block">Hey! I'm</h4>
+                <h1 class="name display-1 text-primary">Klaudia</h1>
+                <h3 class="m-3 p-5 ">Web <span class="type-write"></span></h3>
             </div>
             <div class="col-6 hex d-flex justify-content-center align-items-center">
-                <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                        type="button" data-bs-toggle="projects" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar"></span>
                     <span class="toggler-icon middle-bar"></span>
                     <span class="toggler-icon bottom-bar"></span>
                 </button>
             </div>
-            <a class="order-2" href="https://cloudyaa.github.io/resume-page/index.html"><span
+            <a class="order-2" href="https://klaudiaolczyk-cv.cloudyaa5.repl.co/"><span
                     class="resume-btn-border"></span>See my resume</a>
         </div>
     </header>
@@ -93,7 +93,7 @@
                     <p>I am currently a student pursuing an engineering degree in <span class="highlight">Computer Science</span>
                         at the University of Humanities and Economics in Lodz. Also, I'm a full-time Warehouse worker
                         right now, seriously ;)</p>
-                    <p>In my spare time, I am studying JavaScipt with <span class="highlight">MegaKurs</span>, or making
+                    <p>In my spare time, I am studying JavaScript with <span class="highlight">MegaKurs</span>, or making
                         happy the graphic side of my soul by spending some time in <span class="highlight">Adobe</span>
                         programs such as Photoshop, Illustrator, Premiere, or XD. You can see my arts on Instagram, and
                         process of making them on my TikTok. To see them just click on the icon to the right (or on top
@@ -125,8 +125,9 @@
         <div class="stack content-box">
             <h1>My Stack</h1>
             <div class="content">
-                <div class="stack-box row row-cols-auto justify-content-center align-items-center gap-5 m-0 w-100">
-                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                <div class="stack-box row row-cols-1 row-cols-md-auto justify-content-center align-items-center gap-5 m-0 w-100">
+                    <!--  HTML5  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-html5"></i>
                         <div>
                             <p>HTML5</p>
@@ -142,7 +143,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  CSS3  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-css3-alt"></i>
                         <div>
                             <p>CSS3</p>
@@ -158,10 +160,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  SCSS  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-sass"></i>
                         <div>
-                            <p>SASS</p>
+                            <p>SCSS</p>
                             <div class="skill-description h-100 text-center">
                                 <div class="d-flex gap-0 justify-content-center">
                                     <i class="fa fa-circle"></i>
@@ -174,8 +177,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="stack-item col-12 col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  BOOTSTRAP  -->
+                    <div class="stack-item col col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-bootstrap"></i>
                         <div>
                             <p>Bootstrap</p>
@@ -191,7 +194,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stack-item col-12 col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  JS  -->
+                    <div class="stack-item col col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-js"></i>
                         <div>
                             <p>JS ES6</p>
@@ -207,8 +211,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  Node  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-node"></i>
                         <div>
                             <p>Node</p>
@@ -224,10 +228,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stack-item col-12 col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                    <!--  Express  -->
+                    <div class="stack-item col col-xl-5 d-flex justify-content-around align-items-center gap-2 text-center">
                         <i class="fab fa-node-js"></i>
                         <div>
-                            <p>Express</p>
+                            <p>Express.js</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Regular</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  MySQL  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fas fa-table"></i>
+                        <div>
+                            <p>MySQL</p>
+                            <div class="skill-description h-100 text-center">
+                                <div class="d-flex gap-0 justify-content-center">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                    <i class="fa fa-circle empty"></i>
+                                </div>
+                                <p class="mt-2">Regular</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  MongoDB  -->
+                    <div class="stack-item col col-xl-auto d-flex justify-content-around align-items-center gap-2 text-center">
+                        <i class="fas fa-database"></i>
+                        <div>
+                            <p>MongoDB</p>
                             <div class="skill-description h-100 text-center">
                                 <div class="d-flex gap-0 justify-content-center">
                                     <i class="fa fa-circle"></i>
@@ -250,124 +289,120 @@
         <div class="projects content-box">
             <h1>My projects</h1>
             <div class="content">
-                <div class="cont cont-inactive">
-                    <div class="cont-inner">
-
-                        <!-- Grocery shop design-->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">Grocery shop</h2>
+                <div class="projects-group row row-cols-1 row-cols-md-2 justify-content-center g-3">
+                    <!--  Grocery shop design -->
+                    <div class="col project-card">
+                            <div class="project-inner text-center">
+                                <img src="img/projects-views/groceries-design.png" alt="groceries-design-preview" class="img-fluid mock-img">
+                                <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                    <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                        <a class="btn btn-outline-primary">More info</a>
+                                        <a class="btn btn-outline-primary">live</a>
                                     </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">Grocery shop</div>
-
-                                        <div class="el-close-btn"></div>
+                                    <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                        <p class="m-0">Web design</p>
                                     </div>
+                                    <div class="bott-overlay"></div>
+
                                 </div>
+                            </div>
+
+                    </div>
+                    <!--  Grocery shop development-->
+                    <div class="col project-card">
+                        <div class="project-inner text-center">
+                            <img src="img/projects-views/groceries.png" alt="groceries-shop-preview" class="img-fluid mock-img">
+                            <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                    <a class="btn btn-outline-primary">More info</a>
+                                    <a href="https://simply-shop-project.cloudyaa5.repl.co/" target="_blank" class="btn btn-outline-primary">live</a>
+                                </div>
+                                <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                    <p class="m-0">Web development</p>
+                                </div>
+                                <div class="bott-overlay"></div>
+
                             </div>
                         </div>
 
-                        <!-- Basket shop -->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">Shop basket</h2>
-                                    </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">Simple shop basket</div>
-                                        <div class="used-tech d-flex gap-3">
-                                            <p class="tech">HTML5</p>
-                                            <p class="tech">CSS3</p>
-                                            <p class="tech">JavaScript</p>
-                                            <p class="tech">Node.js</p>
-                                        </div>
-                                        <p>It was supposed to be simple project done while taking my first steps in
-                                            Node.js thanks to MegaK. Main goal of this project was to get working shop
-                                            basket - add, delete and show items in basket as well as clear whole basket
-                                            at once.</p>
-                                        <p>It was my first back-end project</p>
-                                        <a class="btn" href="https://simply-shop-project.cloudyaa5.repl.co/"
-                                           target="_blank">Live version</a>
-                                        <div class="el-close-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mood counter -->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">Mood counter</h2>
-                                    </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">
-                                            <p>Whatever</p>
-
-
-                                        </div>
-                                        <div class="el-close-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- HTML/CSS docs page -->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">HTML/CSS Docs&nbsp;page</h2>
-                                    </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">Whatever</div>
-                                        <div class="el-close-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Landing page -->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">Landing page</h2>
-                                    </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">Whatever</div>
-                                        <div class="el-close-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Survey form-->
-                        <div class="el-box">
-                            <div class="el-overflow">
-                                <div class="el-inner">
-                                    <div class="el-bg"></div>
-                                    <div class="el-preview-cont">
-                                        <h2 class="el-heading">Survey form</h2>
-                                    </div>
-                                    <div class="el-content">
-                                        <div class="el-content-hd">Whatever</div>
-                                        <div class="el-close-btn"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+
+                <div class="more row row-cols-1 row-cols-md-2 g-3 justify-content-center collapsing">
+                        <!--  Mood counter  -->
+                        <div class="col project-card">
+                            <div class="project-inner text-center">
+                                <img src="img/projects-views/mood-counter.png" alt="mood-counter-preview" class="img-fluid mock-img">
+                                <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                    <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                        <a class="btn btn-outline-primary">More info</a>
+                                        <a href="https://codepen.io/cloud-yaa/full/NWyKowO" target="_blank" class="btn btn-outline-primary">live</a>
+                                    </div>
+                                    <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                        <p class="m-0">Web development</p>
+                                    </div>
+                                    <div class="bott-overlay"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  HTML / CSS documentation page  -->
+                        <div class="col project-card">
+                            <div class="project-inner text-center">
+                                <img src="img/projects-views/docs-page.png" alt="documentation-page-preview" class="img-fluid mock-img">
+                                <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                    <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                        <a class="btn btn-outline-primary">More info</a>
+                                        <a href="https://codepen.io/cloud-yaa/pen/NWwpVom" target="_blank" class="btn btn-outline-primary">live</a>
+                                    </div>
+                                    <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                        <p class="m-0">Web development</p>
+                                    </div>
+                                    <div class="bott-overlay"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  Service page -->
+                        <div class="col project-card">
+                            <div class="project-inner text-center">
+                                <img src="img/projects-views/service-page.png" alt="service-page-preview" class="img-fluid mock-img">
+                                <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                    <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                        <a class="btn btn-outline-primary">More info</a>
+                                        <a href="https://codepen.io/cloud-yaa/full/oNoYNGK" target="_blank" class="btn btn-outline-primary">live</a>
+                                    </div>
+                                    <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                        <p class="m-0">Web development</p>
+                                    </div>
+                                    <div class="bott-overlay"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--  Survey form  -->
+                        <div class="col project-card">
+                            <div class="project-inner text-center">
+                                <img src="img/projects-views/survey-form.png" alt="survey-form-preview" class="img-fluid mock-img">
+                                <div class="project-info position-absolute top-0 start-0 w-100 h-100">
+                                    <div class="top-overlay card-buttons d-flex justify-content-center align-items-center gap-5">
+                                        <a class="btn btn-outline-primary">More info</a>
+                                        <a href="https://codepen.io/cloud-yaa/full/zYPOegp" target="_blank" class="btn btn-outline-primary">live</a>
+                                    </div>
+                                    <div class="mid-overlay project-type d-flex justify-content-center align-items-center">
+                                        <p class="m-0">Web development</p>
+                                    </div>
+                                    <div class="bott-overlay"></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <button class="btn btn-outline-primary collapse-projects d-block">See more</button>
             </div>
         </div>
     </section>
@@ -376,48 +411,57 @@
     <section id="contact-section">
         <div class="contact content-box">
             <h1>Contact</h1>
-            <div class="content">
-                <div class="social-group d-flex gap-3 align-items-center justify-content-center">
+            <div class="content d-flex flex-column flex-md-row align-items-end align-items-md-center justify-content-end justify-content-md-between gap-5">
+                <div class="social-group d-flex flex-md-column align-items-center justify-content-center gap-3 flex-md-wrap">
+                    <!-- github -->
                     <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-facebook-square social-icon"></i>
-                        </button>
-                        <a href="https://www.facebook.com/klaudiaaolczyk/" target="_blank" class="social-desc">Facebook</a>
-                    </div>
-                    <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-instagram social-icon"></i>
-                        </button>
-                        <a href="https://www.instagram.com/cloud_yaa/" target="_blank" class="social-desc">Instagram</a>
-                    </div>
-                    <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-github social-icon"></i>
-                        </button>
+                        <i class="fab fa-github social-icon btn"></i>
                         <a href="https://github.com/Cloudyaa" target="_blank" class="social-desc">Github</a>
                     </div>
+                    <!-- codepen -->
                     <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-codepen social-icon"></i>
-                        </button>
+                        <i class="fab fa-codepen social-icon btn"></i>
                         <a href="https://codepen.io/cloud-yaa" target="_blank" class="social-desc">Codepen</a>
                     </div>
+                    <!-- replit -->
                     <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-chrome social-icon"></i>
-                        </button>
+                        <i class="fab fa-chrome social-icon btn"></i>
                         <a href="https://replit.com/@Cloudyaa5" target="_blank" class="social-desc">Replit</a>
                     </div>
+                    <!-- redbubble -->
                     <div class="social-el">
-                        <button type="button" class="btn">
-                            <i class="fab fa-linkedin social-icon"></i>
-                        </button>
+                        <i class="bi bi-bag-heart-fill social-icon btn"></i>
+                        <a href="https://www.redbubble.com/people/cloudy-aa/shop?asc=u&ref=account-nav-dropdown" target="_blank" class="social-desc">Redbubble</a>
+                    </div>
+                    <!-- linkedin -->
+                    <div class="social-el">
+                        <i class="fab fa-linkedin social-icon btn"></i>
                         <a href="https://www.linkedin.com/in/klaudiaa-olczyk/" target="_blank" class="social-desc">LinkedIn</a>
                     </div>
-<!--                    <a href="mailto:klaudiaaolczyk@gmail.com" class=" contact-details">-->
-<!--                        <i class="fas fa-at"></i> Send a mail-->
-<!--                    </a>-->
+                    <!-- facebook -->
+                    <div class="social-el">
+                        <i class="fab fa-facebook-square social-icon btn"></i>
+                        <a href="https://www.facebook.com/klaudiaaolczyk/" target="_blank" class="social-desc">Facebook</a>
+                    </div>
                 </div>
+                <form class="justify-content-md-end contact-form">
+                    <h5>Feel free to leave me a message below</h5>
+                    <hr>
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" class="form-control input" required />
+                        <label for="name" class="input-label">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="email" name="email" class="form-control input" required />
+                        <label for="email" class="input-label">E-mail</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="comment" id="message" class="form-control input" placeholder="This option is temporarily disabled for maintenance. Please use button below to send an e-mail" disabled></textarea>
+                        <label for="message" class="input-label"></label>
+                    </div>
+                    <a href="mailto:klaudiaaolczyk@gmail.com" class="btn btn-outline-primary">Send</a>
+<!--                        <button type="submit" class="btn btn-outline-primary">Send</button>-->
+                </form>
             </div>
         </div>
     </section>
@@ -426,10 +470,8 @@
 </div>
 <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 <script src="https://kit.fontawesome.com/eeefc8b21f.js" crossorigin="anonymous"></script>
-<script src="public/scripts/typeWriter.js"></script>
-<script src="public/scripts/burger.js"></script>
-<script src="public/scripts/projects.js"></script>
-
-
+<script src="scripts/typeWriter.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/projects.js"></script>
 </body>
 </html>

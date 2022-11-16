@@ -1,0 +1,30 @@
+@use '../helpers/colors' as *;
+
+.bi, .fab, .fas {
+  font-size: 30px;
+  color: $highlight;
+  transition: $transition-all;
+}
+
+.stack-item {
+  :is(.fab, .fas) {
+    font-size: 8rem;
+    transition: $transition-all;
+    &:hover{
+      color: $highlight;
+      @include filter(drop-shadow(0 0 4px $highlight));
+      rotate: -10deg;
+    }
+  }
+}
+
+
+.bi:is(:hover, :focus, :focus-within):not(.social-icon) {
+  color: $highlight;
+  text-shadow: $nav-shadow;
+}
+
+:is(.nav, .social) i {
+  color: $charcoal;
+}
+

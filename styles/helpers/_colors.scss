@@ -1,0 +1,41 @@
+
+/* colors definition */
+$white: #fff;
+$lt-grey: #B9B9B9;
+$grey: #575757;
+$charcoal: #333333;
+$dk-charcoal: #292929;
+$black: #000;
+$turquoise: rgb(13, 255, 211);
+
+/* active palette - portfolio */
+$main-background: $dk-charcoal;
+$second-background: #1B1B1B;
+$main-text: $lt-grey;
+$second-text: $charcoal;
+$highlight: $turquoise;
+$shadow: $charcoal;
+$overlay: rgba(0, 0, 0, 0.3);
+$overlay2: rgba(21, 21, 21, 0.94);
+$bg-overlay: rgba(41, 41, 41, 0.85);
+
+/* bootstrap overwrite */
+$primary: $turquoise;
+$body-bg: $charcoal;
+$body-color: $lt-grey;
+$component-active-bg: $turquoise;
+$input-color: $main-text;
+$input-bg: $charcoal;
+$input-border-color: $charcoal;
+$input-plaintext-color: $body-bg;
+$input-focus-border-color: $highlight;
+$input-focus-box-shadow: 0 0 10px $highlight;
+
+
+//$input-focus-bg:                        $input-bg;
+
+//$input-focus-color:                     $input-color;
+//$input-focus-width:                     $input-btn-focus-width;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+

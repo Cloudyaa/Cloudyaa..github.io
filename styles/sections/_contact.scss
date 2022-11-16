@@ -1,0 +1,96 @@
+@use '../helpers/colors' as *;
+
+.contact {
+  .social-group {
+    width: 20%;
+    max-height: 200px;
+    /* prevent hover from triggering in gaps */
+    visibility: hidden;
+    & > * { visibility: visible; }
+    &:hover > :not(:hover){ opacity: 0.1; }
+  }
+
+  .social-el {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    line-height: 0;
+    border-radius: 10px;
+    background: $main-background;
+    transition: width 0.8s ease-in-out, opacity 0.4s;
+    overflow: hidden;
+    width: 50px;
+
+    .btn {
+      background-color: $main-background;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      transition: background-color 0.8s ease-out;
+    }
+
+    .social-desc {
+      // display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+      color: $highlight;
+
+      &:is(:hover) {
+        color: inherit;
+      }
+    }
+
+    &:hover {
+      width: calc(240px);
+      box-shadow: 0 0 10px #1e1e1e, -1px -1px 10px #343434;
+      color: $highlight;
+      .social-desc {opacity: 1}
+      .btn {background-color: $highlight;}
+      i {color: $main-background;}
+    }
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    padding: 10px;
+    border: none;
+  //  background-color: transparent;
+  }
+
+  textarea[disabled]{
+    background: $input-bg;
+  }
+
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 0px);
+    transition: transform 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+  }
+  .input:focus+.input-label,
+  .input:valid+.input-label{
+    transform: translate(10px, -25px) scale(0.8);
+    color: $highlight;
+    background: linear-gradient(transparent 0%, $second-text 65%);
+  }
+
+
+
+
+
+  @media (max-width: 1160px), (max-width: 1160px) and (orientation: landscape) {
+    .social-group{
+      width: unset;
+      max-height: unset;
+    }
+  }
+
+}
