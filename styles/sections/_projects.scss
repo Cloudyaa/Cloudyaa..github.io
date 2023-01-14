@@ -82,5 +82,16 @@
   }
 }
 
+.project-more {
+  background-color: $dk-charcoal;
+  max-width: 524px;
+  .project-stack{
+    color: $grey;
+  }
+  .project-desc {
+    max-width: 480px;
+  }
+}
+
 
 

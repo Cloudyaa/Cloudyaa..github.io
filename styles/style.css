@@ -9284,6 +9284,9 @@ textarea.form-control-lg {
   color: #0dffd3;
   transition: all 0.3s ease-out; }
 
+.custom-icon {
+  height: 120%; }
+
 .stack-item :is(.fab, .fas) {
   font-size: 8rem;
   transition: all 0.3s ease-out; }
@@ -9433,6 +9436,7 @@ section {
   width: 62px;
   height: 100vh;
   z-index: 1000;
+  margin: 0;
   /*  layer to cover incoming hover */ }
   .nav .bg-cover {
     background-color: #1B1B1B;
@@ -9440,10 +9444,13 @@ section {
     height: 100vh;
     width: inherit;
     z-index: 10; }
+  .nav ul {
+    width: inherit; }
   .nav .nav-link {
     z-index: 20; }
   .nav .nav-item {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     width: 20px; }
   .nav p {
@@ -9458,7 +9465,7 @@ section {
     .nav .hover-item p {
       margin-left: 25px; }
   .nav .nav-item:hover .hover-item {
-    transform: translateX(0px);
+    transform: translateX(15px);
     transition: all 0.5s 0.1s; }
 
 @media (max-width: 991.98px) {
@@ -9692,9 +9699,17 @@ section {
     margin: 7rem auto;
     width: 70%; }
 
+.project-more {
+  background-color: #292929;
+  max-width: 524px; }
+  .project-more .project-stack {
+    color: #575757; }
+  .project-more .project-desc {
+    max-width: 480px; }
+
 @use '../helpers/colors' as *;
 .contact .social-group {
-  width: 20%;
+  width: 100%;
   max-height: 200px;
   /* prevent hover from triggering in gaps */
   visibility: hidden; }
@@ -9712,14 +9727,14 @@ section {
   background: #292929;
   transition: width 0.8s ease-in-out, opacity 0.4s;
   overflow: hidden;
-  width: 50px; }
+  width: 200px; }
   .contact .social-el .btn {
     background-color: #292929;
     border: none;
     border-radius: 5px 0 0 5px;
     transition: background-color 0.8s ease-out; }
   .contact .social-el .social-desc {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in;
     color: #0dffd3; }
     .contact .social-el .social-desc:is(:hover) {

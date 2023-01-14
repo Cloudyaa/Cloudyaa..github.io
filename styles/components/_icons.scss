@@ -6,6 +6,10 @@
   transition: $transition-all;
 }
 
+.custom-icon {
+  height: 120%;
+}
+
 .stack-item {
   :is(.fab, .fas) {
     font-size: 8rem;

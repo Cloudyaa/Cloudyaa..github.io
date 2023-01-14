@@ -4,6 +4,7 @@
   width: 62px;
   height: 100vh;
   z-index: 1000;
+  margin: 0;
 
   /*  layer to cover incoming hover */
   .bg-cover {
@@ -14,9 +15,14 @@
     z-index: 10;
   }
 
+  ul {
+    width: inherit;
+  }
+
   .nav-link { z-index: 20; }
   .nav-item {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     width: 20px;
   }
@@ -37,7 +43,7 @@
 
   .nav-item:hover {
     .hover-item {
-      transform: translateX(0px);
+      transform: translateX(15px);
       transition: all 0.5s 0.1s;
     }
   }
