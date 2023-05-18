@@ -1,0 +1,19 @@
+.container {
+  padding: 0 2rem;
+  height: 100vh;
+  &__flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    &__flexCenter {
+      text-align: unset;
+    }
+  }
+}
