@@ -1,0 +1,58 @@
+@use 'palette' as *;
+@use 'helpers/fonts' as *;
+@use 'helpers/colors' as *;
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+
+  --foreground: #{$text};
+  --background-main: #{$main-bg};
+  --background-nav: #{$second-bg-dark};
+
+  --font-family: #{$body-font-type};
+  --letter-spacing: #{$letter-spacing};
+
+  --primary: #{$primary};
+
+  --gray-500: #{map-get($gray, 500)};
+
+  --transition-classic: 0.4s ease;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--foreground);
+  background: var(--background-main);
+  letter-spacing: var(--letter-spacing);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-classic);
+}
+
+a:is(.active, :hover){
+  color: $primary;
+  filter: drop-shadow(0 0 4px var(--primary));
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
