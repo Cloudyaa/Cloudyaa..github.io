@@ -1,24 +1,11 @@
 'use client';
 
 import React from 'react';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { navLinks } from './navLinks';
+import { useViewport } from '@/hooks';
+import { DesktopNav } from '@/components/Navigation/desktop/DesktopNav';
+import { MobileNav } from '@/components/Navigation/mobile/MobileNav';
 
 export const Navigation = () => {
-  const pathname = usePathname();
-
-  return (
-    <>
-      {navLinks.map((link) => {
-        const isActive = pathname?.startsWith(link.href);
-
-        return (
-          <Link className={isActive ? 'active' : ''} href={link.href} key={link.name}>
-            {link.name}
-          </Link>
-        );
-      })}
-    </>
-  );
+  const { viewportWidth, breakpointDesktop } = useViewport();
+  return viewportWidth > breakpointDesktop ? <DesktopNav /> : <MobileNav />;
 };
