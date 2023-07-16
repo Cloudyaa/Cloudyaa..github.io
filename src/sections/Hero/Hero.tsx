@@ -2,13 +2,26 @@
 
 import React from 'react';
 import Link from 'next/link';
-import main from '../../app/main.module.scss';
 import { Box } from '@mui/material';
+import styled from '@emotion/styled';
+
+const BoxStyled = styled(Box)`
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: unset;
+  }
+`;
 
 export const Hero = () => {
   return (
     <header id={'home'}>
-      <Box className={`${main.container} ${main.container__flexCenter}`}>
+      <BoxStyled>
         <div className="hero__title">
           <h4>Hey! I&apos;m</h4>
           <h1>Klaudia</h1>
@@ -22,7 +35,7 @@ export const Hero = () => {
         >
           <span className="resume-btn-border"></span>See my resume
         </Link>
-      </Box>
+      </BoxStyled>
     </header>
   );
 };
