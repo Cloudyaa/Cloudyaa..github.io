@@ -5,7 +5,7 @@ export const navLinks: NavigationEntity[] = [
   {
     name: 'Home',
     icon: <BsHouse />,
-    href: '/',
+    href: '#home',
   },
   {
     name: 'About me',

@@ -7,7 +7,7 @@ import { Box } from '@mui/material';
 
 export const Hero = () => {
   return (
-    <header id="home">
+    <header id={'home'}>
       <Box className={`${main.container} ${main.container__flexCenter}`}>
         <div className="hero__title">
           <h4>Hey! I&apos;m</h4>
