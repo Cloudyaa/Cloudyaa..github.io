@@ -1,16 +1,22 @@
 import { createTheme } from '@mui/material/styles';
+import { COLORS } from '@/values/colors';
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: 'rgb(var(--primary-rgb))',
+      main: COLORS.turquoise['500'],
     },
     secondary: {
-      main: 'rgb(var(--secondary-main-rgb))',
-      light: 'rgb(var(--secondary-light-rgb))',
+      main: COLORS.gray['700'],
+      light: COLORS.gray['500'],
+    },
+    background: {
+      default: COLORS.gray['700'],
+      paper: COLORS.gray['900'],
     },
   },
+
   typography: {
-    fontFamily: 'var(--font-mono)',
+    fontFamily: 'Source Code Pro',
   },
 });

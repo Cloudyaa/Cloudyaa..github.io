@@ -1,9 +1,0 @@
-@use 'helpers/colors' as *;
-@use "sass:map";
-
-$primary: map.get($turquoise, 500);
-
-$text: map.get($gray, 300);
-$main-bg: map.get($gray, 700);
-$second-bg-light: map.get($gray, 600);
-$second-bg-dark: map.get($gray, 900);
